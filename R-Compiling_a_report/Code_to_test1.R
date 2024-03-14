@@ -14,4 +14,5 @@ cars
 
 summary(cars)
 
-hist(cars$speed)
+p1_carspeed <- hist(cars$speed)
+p1_carspeed

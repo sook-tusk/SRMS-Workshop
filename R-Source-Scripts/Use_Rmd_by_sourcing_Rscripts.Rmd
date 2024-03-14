@@ -1,0 +1,48 @@
+---
+title: "markdown prac"
+output:
+  word_document:
+    number_sections: yes
+    reference_docx: 0_Template_Code_export.docx
+---
+
+# Embedding R code
+
+We press **Ctrl (Cmd) + Alt + I**.
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+data(mtcars)
+head(mtcars)
+```
+
+Does it amaze you? Well, using rmarkdown is much more complex than the above example! Your data analysis steps involve multiple stages and you'll be selective in presenting results.
+
+In practice, you'll run the entire file first then load the objects before printing. This is an example only, and the output will not be printed.
+
+```{r, eval = TRUE}
+source("F/Git_public/Support/SRMS-Workshop/R-Source-Scripts/Code_to_test1.R")
+
+```
+```{r}
+# Figure
+p1_carspeed
+
+# Desc stats (specify obj name)
+# descstats
+```
+
+#  Styles and formatting 
+Use a Word template. Go to Styles tab and choose Heading. Modify as appropriate. Specify at the top as reference_docx:yourtemplate.docx.
+
+Also see BB for tutorial on Styles. 
+
+
+Well-done! 👍
