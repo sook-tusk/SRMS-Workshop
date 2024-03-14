@@ -12,7 +12,7 @@ Where does the code go? R Code will be placed under ```{r}. This means R code is
 
 This means that you do not actually run the code, but simply PRINT the code. 
 
-Put your R code in the blank (line 25). Save. Then, click on Knit.
+Put your R code in the blank (line 25). Save. Then, click on Knit (the incon looks similar to 🧵 ).
 
 The icon resembles a needle and thread as Knit implies. It is placed with other menu icons at the top, just under the filename. Alternatively, you can press Ctrl+Shift+P (or Cmd+Shift+P in Mac), then type Knit, before pressing Enter. If you have an opened (code-exported) word document already, ensure to close it before you Knit. I hope it works!
 
