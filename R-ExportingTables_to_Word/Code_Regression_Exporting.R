@@ -15,15 +15,14 @@ rm(list = ls())    # Remove objects
 
 install.packages("modelsummary") # Regression tables
 install.packages("eoffice")      # Export to Word
-install.packages("eoffice")  
-# install.packages("tableone") 
-library("tableone")
+install.packages("tableone")  
 
 #H-----------------------------------
 ## > 1. Descriptive statistics ----
 #H-----------------------------------
 # setwd("")      # Set the current folder
-health <- read_rds("health_cleaned.rds")
+library("tidyverse")
+health <- read_rds("R-ExportingTables_to_Word/health_cleaned.rds")
 
 # both removed variable names!
 
@@ -53,7 +52,7 @@ desc
 # EXPORT TO DOCX
 # install.packages("eoffice")
 library("eoffice")
-totable(desc, "R_Tables/Desc.docx") 
+totable(desc, "R-ExportingTables_to_Word/R_Tables/Desc.docx") 
 
 # https://cran.r-project.org/web/packages/tableone/vignettes/introduction.html
 
@@ -81,7 +80,7 @@ modelsummary(models, stars = TRUE, gof_map = fit)
 ####### EXPORT TO DOCX: #######
 # library("eoffice")
 modelsummary(models, stars = TRUE, gof_map = fit, 
-        output = "R_Tables/Regression.docx")
+        output = "R-ExportingTables_to_Word/R_Tables/Regression.docx")
 
 
 ### End ###
