@@ -3,10 +3,10 @@ May 2024
 # Setup github and RStudio to deposit your code
 
 # Steps
-1. Install git.
+## 1. Install git.
 In MacOS, git is pre-installed.
 
-**already installed**
+**Check if already installed**
 Mac Launchpad > terminal > open terminal > type git version
 git version 2.39.3 (Apple Git-146)
 
@@ -24,12 +24,12 @@ After authentication, "Let's get started" window appears. Stop there.
 See tutorial here:
 https://www.macobserver.com/tips/how-to/set-up-install-git-mac/
 
-2. Create a github account.
+## 2. Create a github account.
 https://github.com/
 Click Sign Up.
 Then follow the on-screen instructions.
 
-3. Connect RStudio to Git
+## 3. Connect RStudio to Git
 (establish remote connection)
 First, launch RStudio.
 In menu, go to Tools  > Global Options > Git/SVN
@@ -50,7 +50,7 @@ https://frbcesab.github.io/rsetup/chapters/github-ssh.html
 Click on Create SSH Key, select ED25519 and then click on Create (you can omit the passphrase). This new SSH keys pair has been stored in ~/.ssh/.
 Click on **View public key** and copy it.
 
-4. We need to paste this SSH key to github page.
+## 4. We need to paste this SSH key to github page.
 Go to the page https://github.com/settings/keys and click on New SSH key Choose a name for your key (e.g. your laptop name, 2024-sk-mac) and paste your public key. Finally click on Add SSH key
 
 Apply and Click OK. Ensure to restart RStudio.
@@ -62,10 +62,12 @@ ssh -T git@github.com
 *The authenticity of host '[92.168.45.3]:22' can't be established.
 ED25519 key fingerprint is ...
 Are you sure you want to continue connecting (yes/no/[fingerprint])?*
+
+
 If this is printed, it's correctly done.  Type yes and press Enter.
 
 
-5. Log in to github, then create a repository.
+## 5. Log in to github, then create a repository.
 Give a name and a short description.
 As a test, I created a Private repository.
 Then, click create repository.
@@ -73,11 +75,11 @@ Then, click create repository.
 In the repository, click Code (in green) drop-down menu.
 Instead of HTML URL, we use SSH URL to connect this repo with RStudio.
 
-5. Clone github repo to a RStudio project
-At the top-right corner, click on Project upside-down arrow >
- New Project... > Version Control > Git >
+## 6. Clone github repo to a RStudio project
+At the top-right corner, click on Project upside-down arrow > New Project... > Version Control > Git >
  Clone Git Repository >
- Repository URL:
+
+ In Repository URL:
  paste the SSH URL from github repository
    e.g. git@github.com:srms1/test.git
 
@@ -88,15 +90,18 @@ Customise the subdirectory as appropriate.
 
 Then, click Create Project.
 
-6. Upload(push) your project in RStudio to github:
+## 7. Upload(push) your project in RStudio to github:
+Update your files in RStudio. When complete, do the following.
 Navigate to the Git tab in RStudio, which is located next to the Environment tab.
-Tick the files to share > Commit >
-In Commit message window, type a brief description >
-Press Commit > Press Push (in green)
+
+Tick the box to select files to share > Commit. 
+
+In Commit message window, type a brief description.
+Then, Press Commit > Press Push (in green)
 
 To verify in github repo online, press refresh button.
 
-*Note: If asked for Username, and password for 'https://github.com/', type your Username.*
+*Note: If asked for Username, and password for 'https://github.com/', type as appropriate*
 
 Voila! You have just shared your project online by remotely connecting RStudio to github!
 
