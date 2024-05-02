@@ -98,7 +98,8 @@ Navigate to the **Git** tab in RStudio, which is located next to the *Environmen
 *Tick* the box to select files to share > **Commit**. 
 
 In Commit message window, type a brief description.
-Then, Press **Commit** > Press **Push** (in green)
+Then, Press **Commit** > Close the window >
+Press the **Push** arrow button (in green)
 
 To verify in github repo online, press refresh button.
 
