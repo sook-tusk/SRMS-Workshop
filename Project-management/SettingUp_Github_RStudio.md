@@ -19,9 +19,9 @@ https://desktop.github.com/
 
 
 > Once the download completes, double-click the file to install and launch the app immediately.
-
+>
 > After authentication, "Let's get started" window appears. Stop there.
-
+>
 > See tutorial here:
 > https://www.macobserver.com/tips/how-to/set-up-install-git-mac/
 
