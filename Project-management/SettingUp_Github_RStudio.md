@@ -25,16 +25,16 @@ See tutorial here:
 https://www.macobserver.com/tips/how-to/set-up-install-git-mac/
 
 ## 2. Create a github account.
-https://github.com/
-Click Sign Up.
+Visit https://github.com/ and click Sign Up.
 Then follow the on-screen instructions.
 
 ## 3. Connect RStudio to Git
-(establish remote connection)
-First, launch RStudio.
-In menu, go to Tools  > Global Options > Git/SVN
+Essentially, you are establishing remote connection.
 
-a. Tick the box for "Enable version control interface for RStudio projects"
+First, launch RStudio.
+In menu, go to *Tools  > Global Options > Git/SVN*
+
+a. Tick the box for **Enable version control interface for RStudio projects**
 
 b. Set the git path settings in RStudio:
 - Set Git executable (Windows):
@@ -73,7 +73,7 @@ As a test, I created a Private repository.
 Then, click create repository.
 
 In the repository, click Code (in green) drop-down menu.
-Instead of HTML URL, we use SSH URL to connect this repo with RStudio.
+Instead of HTML URL, we need SSH URL to connect this repo with RStudio. We just check SSH URL for now.
 
 ## 6. Clone github repo to a RStudio project
 At the top-right corner, click on Project upside-down arrow > New Project... > Version Control > Git >
@@ -81,7 +81,7 @@ At the top-right corner, click on Project upside-down arrow > New Project... > V
 
  In Repository URL:
  paste the SSH URL from github repository
-   e.g. git@github.com:srms1/test.git
+   e.g. *git@github.com:srms1/test.git*
 
 Click Code (in green) drop-down menu.
 Instead of using HTML URL, ensure to use SSH URL.
@@ -92,12 +92,12 @@ Then, click Create Project.
 
 ## 7. Upload(push) your project in RStudio to github:
 Update your files in RStudio. When complete, do the following.
-Navigate to the Git tab in RStudio, which is located next to the Environment tab.
+Navigate to the **Git** tab in RStudio, which is located next to the *Environment* tab.
 
-Tick the box to select files to share > Commit. 
+*Tick* the box to select files to share > **Commit**. 
 
 In Commit message window, type a brief description.
-Then, Press Commit > Press Push (in green)
+Then, Press **Commit** > Press **Push** (in green)
 
 To verify in github repo online, press refresh button.
 
@@ -113,4 +113,4 @@ https://erikaduan.github.io/posts/2021-05-30-syncing-to-github/
 https://medium.com/singapore-rails-learning-group/how-to-push-your-code-to-github-and-publish-your-first-page-8b0e1f4caf2a
 
 # Exercise
-Create several private repositories and experiment with github and RStudio. 
+Create several private repositories and experiment with github and RStudio. When you feel confident, share your project as a public repository!
