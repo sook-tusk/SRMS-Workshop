@@ -16,13 +16,14 @@ https://git-scm.com/downloads
 
 Alternatively, install GitHub Desktop
 https://desktop.github.com/
-
+```
 Once the download completes, double-click the file to install and launch the app immediately.
 
 After authentication, "Let's get started" window appears. Stop there.
 
 See tutorial here:
 https://www.macobserver.com/tips/how-to/set-up-install-git-mac/
+```
 
 ## 2. Create a github account.
 Visit https://github.com/ and click Sign Up.
