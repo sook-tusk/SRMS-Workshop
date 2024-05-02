@@ -111,3 +111,6 @@ https://frbcesab.github.io/rsetup/chapters/github-ssh.html
 https://erikaduan.github.io/posts/2021-05-30-syncing-to-github/
 
 https://medium.com/singapore-rails-learning-group/how-to-push-your-code-to-github-and-publish-your-first-page-8b0e1f4caf2a
+
+# Exercise
+Create several private repositories and experiment with github and RStudio. 
