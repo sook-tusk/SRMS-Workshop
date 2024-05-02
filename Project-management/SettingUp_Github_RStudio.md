@@ -26,7 +26,7 @@ https://www.macobserver.com/tips/how-to/set-up-install-git-mac/
 
 ## 2. Create a github account.
 Visit https://github.com/ and click Sign Up.
-Then follow the on-screen instructions.
+Then follow the on-screen instructions. 
 
 ## 3. Connect RStudio to Git
 Essentially, you are establishing remote connection.
