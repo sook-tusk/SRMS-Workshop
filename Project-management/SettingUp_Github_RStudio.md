@@ -142,4 +142,4 @@ RStudio. When you feel confident, share your project as a public
 repository!
 
 # Troubleshoot 
-Unstable Internet connection could cause errors when pushing the changes. Try again when the connection becomes stable.
+Unstable Internet connection could cause errors when you push the changes. Try again when the connection becomes stable.
