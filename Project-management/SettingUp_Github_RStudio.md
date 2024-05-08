@@ -43,7 +43,7 @@ Alternatively, install GitHub Desktop <https://desktop.github.com/>
 ## 2. Create a github account.
 
 Visit <https://github.com/> and click Sign Up. Then follow the
-on-screen instructions.
+on-screen instructions. 
 
 ## 3. Connect RStudio to Git
 
