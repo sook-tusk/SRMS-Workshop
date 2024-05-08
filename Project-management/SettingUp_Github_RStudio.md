@@ -7,9 +7,9 @@ May 2024
 
 ## 1. Install git.
 
+**Check if already installed**
 In MacOS, git is pre-installed.
 
-**Check if already installed**
 To check, launch RStudio \> Click on Terminal tab \> type git version.
 (Alternatively, in Mac, Launchpad \> terminal \> open terminal \> type git version)
 
