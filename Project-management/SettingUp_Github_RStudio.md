@@ -72,9 +72,9 @@ SSH key Choose a name for your key (e.g. your laptop name,
 
 Apply and Click OK. Ensure to restart RStudio.
 
-(OPTIONAL) Test the SSH connection with GitHub. Open a terminal in
-RStudio and run: ssh -T
-[git\@github.com](mailto:git@github.com){.email}
+(OPTIONAL) Test the SSH connection with GitHub. Open a terminal in RStudio and run: 
+
+> ssh -T git\@github.com
 
 *The authenticity of host '[92.168.45.3]:22' can't be established.
 ED25519 key fingerprint is ... Are you sure you want to continue
@@ -97,7 +97,8 @@ At the top-right corner, click on Project upside-down arrow \> New
 Project... \> Version Control \> Git \> Clone Git Repository \>
 
 In Repository URL: paste the SSH URL from github repository e.g.
-[*git\@github.com*](mailto:git@github.com){.email}*:srms1/test.git*
+
+> git@github.com:srms1/test.git*
 
 Click Code (in green) drop-down menu. Instead of using HTML URL,
 ensure to use SSH URL.
@@ -139,3 +140,6 @@ connecting RStudio to github!
 Create several private repositories and experiment with github and
 RStudio. When you feel confident, share your project as a public
 repository!
+
+# Troubleshoot 
+Unstable Internet connection could cause errors when pushing the changes. Try again when the connection becomes stable.
