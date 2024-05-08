@@ -92,18 +92,18 @@ HTML URL, we need SSH URL to connect this repo with RStudio. We just
 check SSH URL for now.
 
 ## 6. Clone github repo to a RStudio project
-
+Relaunch RStudio.
 At the top-right corner, click on Project upside-down arrow \> New
 Project... \> Version Control \> Git \> Clone Git Repository \>
 
 In Repository URL: paste the SSH URL from github repository e.g.
 
-> git@github.com:srms1/test.git*
+> **git@github.com:srms1/test.git**
 
-Click Code (in green) drop-down menu. Instead of using HTML URL,
-ensure to use SSH URL.
+*Recall that to locate the URL in github repository, click Code (in green) drop-down menu. Instead of using HTML URL,
+ensure to use SSH URL.*
 
-Customise the subdirectory as appropriate.
+Now, back in RStudio, customise the subdirectory as appropriate.
 
 Then, click Create Project.
 
@@ -135,11 +135,11 @@ connecting RStudio to github!
 
 <https://medium.com/singapore-rails-learning-group/how-to-push-your-code-to-github-and-publish-your-first-page-8b0e1f4caf2a>
 
-# Exercise
+# Troubleshoot 
+Unstable Internet connection could cause errors when you push the changes. Try again when the connection becomes stable.
 
+# Exercise
 Create several private repositories and experiment with github and
 RStudio. When you feel confident, share your project as a public
 repository!
 
-# Troubleshoot 
-Unstable Internet connection could cause errors when you push the changes. Try again when the connection becomes stable.
