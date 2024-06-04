@@ -84,8 +84,8 @@ If this is printed, it's correctly done. Type yes and press Enter.
 
 ## 5. Log in to github, then create a repository.
 
-Give a name and a short description. As a test, I created a Private
-repository. Then, click create repository.
+Give a name and a short description. As a test, I created a *Private*
+repository. Ensure to create a readme file by ticking the box, *Add a README file*. Then, click Create repository.
 
 In the repository, click Code (in green) drop-down menu. Instead of
 HTML URL, we need SSH URL to connect this repo with RStudio. We just
@@ -109,17 +109,19 @@ Then, click Create Project.
 
 ## 7. Upload(push) your project in RStudio to github:
 
-Update your files in RStudio. When complete, do the following.
+Update your README file or other project files in RStudio. When complete, do the following.
 Navigate to the **Git** tab in RStudio, which is located next to the
 *Environment* tab.
 
-*Tick* the box to select files to share \> **Commit**.
+*Tick* the box to select *modified* files to share \> Click **Commit**.
 
-In Commit message window, type a brief description. Then, Press
+In the Commit message window, type a brief description. Then, Press
 **Commit** \> Close the window \> Press the **Push** arrow button
 (in green)
 
-To verify in github repo online, press refresh button.
+At this stage, you can close two Commit/Push windows. 
+
+Finally, to verify in github repo online, press refresh button.
 
 *Note: If asked for Username, and password for
 '<https://github.com/>', type as appropriate*
