@@ -14,6 +14,7 @@ To check, launch RStudio \> Click on Terminal tab \> type git version.
 (Alternatively, in Mac, Launchpad \> terminal \> open terminal \> type git version)
 
 > git version 2.39.3 (Apple Git-146)
+> git version 2.37.2.windows.2
 
 If git version is printed as above, move on to the next step.
 
@@ -21,8 +22,6 @@ If git version is printed as above, move on to the next step.
 <https://git-scm.com/downloads>
 
 Verify the installation by using Terminal tab in RStudio. Type "git version" in Terminal.
-
-> git version 2.37.2.windows.2
 
 Alternatively, install GitHub Desktop <https://desktop.github.com/>
 
@@ -139,7 +138,12 @@ connecting RStudio to github!
 <https://medium.com/singapore-rails-learning-group/how-to-push-your-code-to-github-and-publish-your-first-page-8b0e1f4caf2a>
 
 # Troubleshoot 
-Unstable Internet connection could cause errors when you push the changes. Try again when the connection becomes stable.
+- Unstable Internet connection could cause errors when you push the changes. Try again when the connection becomes stable.
+
+- Is the Terminal tab not visible? Press *Ctrl+Shift+P* to bring up Command Palette > Type Show Terminal > Press Enter. 
+Note the option changes from Off to On with Enter key.
+
+Restart RStudio and you'll see the Terminal tab.
 
 # Exercise
 Create or modify other files and push the changes as shown in Step 7. Then, create several private repositories and experiment with github and RStudio (You can skip steps 1-4 and follow the steps 5-7 now with additional repositories).  When you feel confident, share your project as a public repository!
