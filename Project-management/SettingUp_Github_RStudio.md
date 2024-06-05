@@ -140,7 +140,7 @@ connecting RStudio to github!
 # Troubleshoot 
 - Unstable Internet connection could cause errors when you push the changes. Try again when the connection becomes stable.
 
-- Is the Terminal tab not visible? Press *Ctrl+Shift+P* to bring up Command Palette > Type Show Terminal > Press Enter. 
+- Is the Terminal tab not visible in RStudio? Press *Ctrl+Shift+P* to bring up Command Palette > Type Show Terminal > Press Enter. 
 *Note the option changes from Off to On with Enter key.*
 Restart RStudio and you'll see the Terminal tab.
 
