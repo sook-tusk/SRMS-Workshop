@@ -14,12 +14,12 @@ To check, launch RStudio \> Click on Terminal tab \> type git version.
 (Alternatively, in Mac, Launchpad \> terminal \> open terminal \> type git version)
 
 > git version 2.39.3 (Apple Git-146)
+>
 > git version 2.37.2.windows.2
 
 If git version is printed as above, move on to the next step.
 
-**If not, install Git** Visit here to install git.
-<https://git-scm.com/downloads>
+**If not, install Git** by visiting here: <https://git-scm.com/downloads>
 
 Verify the installation by using Terminal tab in RStudio. Type "git version" in Terminal.
 
@@ -141,8 +141,7 @@ connecting RStudio to github!
 - Unstable Internet connection could cause errors when you push the changes. Try again when the connection becomes stable.
 
 - Is the Terminal tab not visible? Press *Ctrl+Shift+P* to bring up Command Palette > Type Show Terminal > Press Enter. 
-Note the option changes from Off to On with Enter key.
-
+*Note the option changes from Off to On with Enter key.*
 Restart RStudio and you'll see the Terminal tab.
 
 # Exercise
