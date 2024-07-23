@@ -4,7 +4,7 @@
 
 This workshop provides practical and structured guidance on the automation of reporting using R.
 
-The session aims to provide practical skills that promote transparency and the improved quality of research without having to rely on LaTex. 
+The session aims to provide practical skills that promote transparency and the improved quality of research for non-LaTex users. 
 
 # Contents
 -	Compiling a report in RStudio (for intermediate processing)
