@@ -1,0 +1,70 @@
+---
+title: "RMarkdown to PDF using fancyhdr"
+author: "Your Student ID"
+date: "September 20th, 2024"
+output:
+  pdf_document:
+    df_print: kable
+    highlight: haddock
+    number_sections: true
+    latex_engine: xelatex
+fontsize: 10pt
+urlcolor: blue
+linkcolor: orange
+header-includes:
+- \usepackage{dcolumn}
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+- \fancyhead[C]{DASS}
+- \fancyhead[L]{Practical 2}
+- \fancyhead[R]{Section 4}
+- \fancyfoot[C]{\thepage}
+---
+
+The option, `\setcounter{page}{1}` indicates that the title page is not counted in the pagination. 
+
+<!-- https://ctan.org/pkg/fancyhdr?lang=en-->
+
+\thispagestyle{empty}
+
+\tableofcontents
+
+\newpage
+
+\setcounter{page}{1}
+
+
+
+# R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r, echo = FALSE, message = FALSE}
+library(stargazer)
+```
+
+
+```{r cars}
+modela <- lm(cars$dist ~ cars$speed)
+```
+
+Skip the regression results table.
+
+<!-- Stargazer latex does not work in Windows PC. It works in Mac. -->
+
+<!-- ```{r, results = 'asis'} -->
+<!-- stargazer(modela, type = "latex", title = "Model Results", align = TRUE, header=FALSE) -->
+<!-- ``` -->
+
+\newpage 
+
+# Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, fig.align = 'center', fig.cap = "Pressure Plot", fig.height = 4, fig.width = 5}
+plot(pressure)
+```
+

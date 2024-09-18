@@ -1,4 +1,3 @@
-
 Todo
 
 # Learning R
@@ -25,8 +24,7 @@ Don't understand summarise()
 
 Using Visual mode, demonstrate: bold, italic, code, blockquote
 
-Convert to a PDF/Word document now (Access Preview menu). 
-Ensure you are comfortable with Styles in Word. Explain YAML (Yet Another Markup Language) rules.
+Convert to a PDF/Word document now (Access Preview menu). Ensure you are comfortable with Styles in Word. Explain YAML (Yet Another Markup Language) rules.
 
 # Rmarkdown (markdown + R code)
 
@@ -34,13 +32,11 @@ We will extend the functionality of markdown grammar, and add R code and its out
 
 This exercise will produce a multitude of files!
 
-# Download Intro-Rmarkdown materials 
+# Download Intro-Rmarkdown materials
 
 [SRMS-Workshop](https://github.com/sook-tusk/SRMS-Workshop)
 
-We will explore Rmd_test1.Rmd first.
-To add caption for figures, we examine Rmd_test2.Rmd.
-We then create a Word template to include in the Rmd_test3.Rmd.
+We will explore Rmd_test1.Rmd first. To add caption for figures, we examine Rmd_test2.Rmd. We then create a Word template to include in the Rmd_test3.Rmd.
 
 # Your turn
 

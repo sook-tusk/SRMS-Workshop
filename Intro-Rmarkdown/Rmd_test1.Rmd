@@ -2,7 +2,7 @@
 title: "Rmarkdown 1"
 author: "9622876"
 date: "2024-09-17"
-output: pdf_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
