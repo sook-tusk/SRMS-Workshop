@@ -39,9 +39,8 @@ This exercise will produce a multitude of files!
 [SRMS-Workshop](https://github.com/sook-tusk/SRMS-Workshop)
 
 We will explore Rmd_test1.Rmd first.
-Then, create a Word template. 
 To add caption for figures, we examine Rmd_test2.Rmd.
-
+We then create a Word template to include in the Rmd_test3.Rmd.
 
 # Your turn
 
