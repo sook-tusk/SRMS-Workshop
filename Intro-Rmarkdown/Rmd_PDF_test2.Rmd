@@ -50,13 +50,7 @@ library(stargazer)
 modela <- lm(cars$dist ~ cars$speed)
 ```
 
-Skip the regression results table.
-
-<!-- Stargazer latex does not work in Windows PC. It works in Mac. -->
-
-<!-- ```{r, results = 'asis'} -->
-<!-- stargazer(modela, type = "latex", title = "Model Results", align = TRUE, header=FALSE) -->
-<!-- ``` -->
+Skip the regression results table for now.
 
 \newpage 
 
