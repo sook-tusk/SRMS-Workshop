@@ -1,0 +1,61 @@
+---
+title: "Rmarkdown with a custom template"
+author: "9622876"
+date: "September 17th, 2024"
+output:
+  bookdown::word_document2: 
+    # toc: true
+    fig_caption: yes
+    number_sections: true
+    global_numbering: true
+    reference_docx: example_custom_template.docx
+---
+
+   
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+#  Styles and formatting 
+Save the converted docx document, `Rmd_test2.docx` as `custom_template.docx`. 
+We open `custom_template.docx` and use as a Word template. 
+
+In Word, access Styles tab and choose Heading. Modify as appropriate. Don't forget to include page numbers!
+Then, in Rmd_test3.Rmd, we will modify YAML.
+Specify at the top as `reference_docx:custom_template.docx`.
+
+
+\newpage
+
+# Data visualisation
+
+See Figure \@ref(fig:speed).
+
+
+```{r speed, fig.cap="Histogram of speed"}
+hist(cars$speed)
+```
+
+
+\newpage
+
+Figure \@ref(fig:dist) illustrates...
+
+```{r dist, echo=FALSE, fig.cap="Histogram of dist"}
+hist(cars$dist)
+```
+
+Well-done! 👍 
+
+# Your turn
+
+Create a blank Rmd file.
+
+How do you create this Rmarkdown file?
+
+In RStudio, go to File \> New file \> R Markdown... When a new window pops up, choose Word as Default Output Format. Click OK.
+
+The default Rmarkdown file looks complex. Delete the text as necessary. Explore the file.
+
+Experiment with Rmd. Convert to HTML, Word, and PDF. Improve the look by tweaking further. Learn code chunk options.

@@ -1,0 +1,34 @@
+---
+title: "Rmarkdown with Figure reference"
+author: "9622876"
+date: "2024-09-17"
+output:
+  bookdown::word_document2: 
+    # toc: true
+    fig_caption: yes
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Including Plots
+
+You can also embed plots, for example: See Figure \@ref(fig:speed).
+
+```{r speed, fig.cap="Histogram of speed"}
+hist(cars$speed)
+```
+
+See Figure \@ref(fig:dist).
+
+```{r dist, echo=FALSE, fig.cap="Histogram of dist"}
+hist(cars$dist)
+```
+
+Note that the `echo = FALSE` suppresses the printing of the code, `hist(cars$dist)`.
+
+# Reference
+
+To learn cross-referencing for Tables, see <https://bookdown.org/yihui/rmarkdown-cookbook/cross-ref.html>

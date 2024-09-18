@@ -1,0 +1,44 @@
+---
+title: "Rmarkdown 1"
+author: "9622876"
+date: "2024-09-17"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+This study investigates A. 
+
+# Section 2 title
+To embed R code, we press **Ctrl (Cmd) + Alt + I**.
+(also show in Command Palette, Ctrl+Shift+P)
+
+```{r}
+
+```
+
+Type your code inside the ticks. 
+
+```{r}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r}
+hist(cars$speed)
+```
+
+```{r, echo=FALSE}
+hist(cars$dist)
+```
+
+Note that the `echo = FALSE` suppresses the printing of the code, `hist(cars$dist)`.
+
+
