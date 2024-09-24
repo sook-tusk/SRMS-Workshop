@@ -24,6 +24,7 @@ As stargazer package may rely on other LaTeX packages, try with other LaTeX opti
 # fancyhdr installation log
 In some instances, file conversions may take a while as RStudio will install missing LaTeX packages.
 
+```
 tlmgr.pl: package repository https://anorien.csc.warwick.ac.uk/mirrors/CTAN/systems/texlive/tlnet (not verified: pubkey missing)
 tlmgr.pl install: package already present: pdftex
 [1/1, ??:??/??:??] install: fancyhdr [6k]
@@ -31,6 +32,7 @@ running mktexlsr ...
 done running mktexlsr.
 tlmgr.pl: package log updated: C:/Users/yourname/AppData/Roaming/TinyTeX/texmf-var/web2c/tlmgr.log
 tlmgr.pl: command log updated: C:/Users/yourname/AppData/Roaming/TinyTeX/texmf-var/web2c/tlmgr-commands.log
+```
 
 # General tips
 If at all possible, using tinytex available in RStudio would be ideal. Fixing errors relating to LaTeX can be challenging for first time users.
