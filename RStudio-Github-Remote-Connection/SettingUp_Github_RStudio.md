@@ -90,7 +90,7 @@ In the repository, click Code (in green) drop-down menu. Instead of
 HTML URL, we need SSH URL to connect this repo with RStudio. We just
 check SSH URL for now.
 
-## 6. Clone github repo to a RStudio project
+## 6. Clone github repo to an RStudio project
 Relaunch RStudio.
 At the top-right corner, click on Project upside-down arrow \> New
 Project... \> Version Control \> Git \> Clone Git Repository \>
