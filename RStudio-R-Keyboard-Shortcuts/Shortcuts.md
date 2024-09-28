@@ -1,4 +1,3 @@
-
 <span style="color:#5F497A;font-weight:700;font-size:35px">
         RStudio keyboard shortcuts (for R)
 </span>
@@ -16,4 +15,4 @@ Please augment the list as necessary.
 | Help example, ? | ?head           | ?head            |
 
 **Note**: The `(Un)Comment` shortcut has been customised from
- *Cmd + Shift + C (or Ctrl + Shift + C)*.
+  *Cmd(Ctrl) + Shift + C*.
