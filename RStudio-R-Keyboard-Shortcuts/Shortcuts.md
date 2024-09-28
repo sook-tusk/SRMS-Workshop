@@ -1,6 +1,5 @@
-<span style="color:#5F497A;font-weight:700;font-size:35px">
-        RStudio keyboard shortcuts (for R)
-</span>
+
+# RStudio keyboard shortcuts (for R)
 
 Please augment the list as necessary. 
 
