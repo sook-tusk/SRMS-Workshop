@@ -1,7 +1,7 @@
 
 May 2024
 
-# Setup github and RStudio to deposit your code
+# Connect github and RStudio to publish your project
 
 # Steps
 
