@@ -124,7 +124,7 @@ Finally, press the **Push** arrow button
 
 At this stage, you can close two remaining Commit/Push windows. 
 
-Finally, to verify in github repo online, press refresh button in your browser.
+To verify in github repo online, press refresh button in your browser.
 
 *Note: If asked for Username, and password for
 '<https://github.com/>', type as appropriate*
