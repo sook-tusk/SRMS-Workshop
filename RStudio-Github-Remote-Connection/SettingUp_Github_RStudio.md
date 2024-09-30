@@ -108,20 +108,23 @@ Then, click Create Project.
 
 ## 7. Upload(push) your project in RStudio to github:
 
-Update your README file or create a new R script file in RStudio. When complete, do the following.
+Update your README file or create a new R script file in RStudio. To reflect the changes, we need to execute in two stages: *Commit* and *Push*.
 
-Navigate to the **Git** tab in RStudio, which is located next to the
-*Environment* tab.
+First, navigate to the **Git** tab in RStudio, which is located next to the *Environment* tab.
 
-*Tick* the box to select *modified* files to share \> Click **Commit**.
+You will see modified files (in this example, your README file) are indicated by `M`.
+
+Now, *Tick* the box to select *modified* files \> Click **Commit**.
 
 In the Commit message window, type a brief description. Then, Press
-**Commit** \> Close the window \> Press the **Push** arrow button
-(in green)
+**Commit** \> Close the window.
+
+Finally, press the **Push** arrow button
+(in green).
 
 At this stage, you can close two remaining Commit/Push windows. 
 
-Finally, to verify in github repo online, press refresh button.
+Finally, to verify in github repo online, press refresh button in your browser.
 
 *Note: If asked for Username, and password for
 '<https://github.com/>', type as appropriate*
