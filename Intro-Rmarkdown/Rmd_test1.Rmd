@@ -14,18 +14,16 @@ knitr::opts_chunk$set(echo = TRUE)
 This study investigates A. 
 
 # Section 2 title
-To embed R code, we press **Ctrl (Cmd) + Alt + I**.
-(also show in Command Palette, Ctrl+Shift+P)
+To embed R code, we press **Ctrl + Alt + I** in Windows, 
+or in Mac, **Cmd + Option + I** .
+(also in Command Palette, press Ctrl(Cmd)+Shift+P then type R code)
 
-```{r}
-
-```
-
-Type your code inside the ticks. 
+Type your code inside a blank line in the code chunk (between ```{r} and ```). 
 
 ```{r}
 summary(cars)
 ```
+
 
 ## Including Plots
 
