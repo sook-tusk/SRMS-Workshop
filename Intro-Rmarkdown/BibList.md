@@ -1,0 +1,58 @@
+---
+title: "References"
+output: html_document
+bibliography: BibListReferences.bib
+nocite: |
+  @WickhamGrolemund2017
+  @Anscombe1973
+  @Kabacoff2015
+  @Healy2018
+---
+
+
+
+<!-- Instructions begin here 
+
+A report is written in plain English (Author, 2024) without using citationkey, such as [@author2024]. Is it possible to just print the references list?
+    
+Yes, nocite creates a Bibliography list.
+
+Ensure to indent. Otherwise, won't compile! 
+No need to sort the list.
+
+Check the entry in html. Fix any mistakes in Zotero. 
+To convert to a Word file, use as below.
+
+You can use the full path for the bib file.
+
+---
+title: "References"
+output: word_document
+bibliography: W:/path/Zotero/references.bib
+nocite: |
+  @WickhamGrolemund2017
+  @Anscombe1973
+  @Kabacoff2015
+---
+
+Need to use your own docx Ref template?
+Must change the ref system style? See below.
+
+---
+title: "References"
+output:
+  word_document:
+    reference_docx: Bib_Template.docx
+bibliography: W:/path/Zotero/references.bib
+csl: W:/path/Zotero/styles/apa.csl
+nocite: |
+  @WickhamGrolemund2017
+  @Anscombe1973
+  @Kabacoff2015
+---
+
+End of Instructions.
+
+Hardcore semiautomation individuals can consider includetext field in Word. It has its own caveat, though!
+
+-->
