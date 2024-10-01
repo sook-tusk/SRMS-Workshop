@@ -62,3 +62,8 @@ You can also embed plots, for example:
 plot(pressure)
 ```
 
+Note: This is a scatterplot illustrating the vapor pressure of Mercury as a Function of Temperature, which is based on R's built-in dataset, `pressure`. Here's a quick glance.
+```{r scatterp, echo = FALSE}
+knitr::kable(head(pressure), caption = "Scatterplot of xy")
+```
+In base R graphics, scatterplots can be produced by following the structure, `plot(x, y)`. In this case, a simpler code, `plot(pressure)` is used.  The full syntax should be `plot(x = pressure$temperature, y= pressure$pressure)`.
