@@ -17,7 +17,7 @@ A report is written in plain English (Author, 2024) without using citationkey, s
     
 Yes, nocite creates a Bibliography list.
 
-Ensure to indent. Otherwise, won't compile! 
+Ensure to indent. Otherwise, it won't compile! 
 No need to sort the list.
 
 Check the entry in html. Fix any mistakes in Zotero. 
