@@ -4,11 +4,10 @@ output: html_document
 bibliography: BibListReferences.bib
 nocite: |
   @WickhamGrolemund2017
-  @Anscombe1973
   @Kabacoff2015
-  @Healy2018
+  @Anscombe1973
+  [@Healy2018]
 ---
-
 
 
 <!-- Instructions begin here 
@@ -18,9 +17,11 @@ A report is written in plain English (Author, 2024) without using citationkey, s
 Yes, nocite creates a Bibliography list.
 
 Ensure to indent. Otherwise, it won't compile! 
-No need to sort the list.
+Note that there is no need to sort the list, but
+it would be easier to keep track if you do.
+Unlike in-text citations, square brackets are not required.
 
-Check the entry in html. Fix any mistakes in Zotero. 
+Check the entry in html. Address any issues in Zotero. 
 To convert to a Word file, use as below.
 
 You can use the full path for the bib file.
