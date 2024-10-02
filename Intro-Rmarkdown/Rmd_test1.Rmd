@@ -12,9 +12,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This study investigates A. 
 
-# Section 2 title
-To embed R code, we press **Ctrl (Cmd) + Alt + I**.
-(also show in Command Palette, Ctrl+Shift+P)
+# Embed R code
+To embed R code, press **Cmd + Option + I ** in Mac or **Ctrl + Alt + I ** in Windows. 
+(also bring up *Command Palette* via `Cmd(Ctrl)+Shift+P`, then type *R Code* in the blank search box to reveal the shortcut)
 
 ```{r}
 
