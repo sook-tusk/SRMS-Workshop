@@ -34,5 +34,12 @@ tlmgr.pl: package log updated: C:/Users/yourname/AppData/Roaming/TinyTeX/texmf-v
 tlmgr.pl: command log updated: C:/Users/yourname/AppData/Roaming/TinyTeX/texmf-var/web2c/tlmgr-commands.log
 ```
 
+# object 'partition_yaml_front_matter' not found
+Close all file tabs open in the Source pane (all Rmd files). 
+Restart RStudio and convert an Rmd file again.
+See the full discussion here:
+<https://github.com/rstudio/rstudio/issues/11552>
+
+
 # General tips
 If at all possible, using tinytex available in RStudio would be ideal. Fixing errors relating to LaTeX can be challenging for first time users.
