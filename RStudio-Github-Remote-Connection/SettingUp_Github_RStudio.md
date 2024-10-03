@@ -111,7 +111,7 @@ Then, click Create Project.
 Update your README file or create a new R script file in RStudio. To reflect the changes, we need to execute in two stages: *Commit* and *Push*.
 
 First, navigate to the **Git** tab in RStudio, which is typically located next to the *Environment* tab.
-(If  **Git** tab is not shown, go to *Tools > Global Options > Pane Layout*. Then, tick the box for **VCS** > Click Apply > OK)
+(If  **Git** tab is not shown, go to *Tools > Global Options > Pane Layout*. Then, tick the box for **VCS** > Click Apply > OK).
 
 You will see modified files (in this example, your README file) are indicated by `M`.
 
