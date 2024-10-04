@@ -75,11 +75,9 @@ Apply and Click OK. Ensure to restart RStudio.
 
 > ssh -T git\@github.com
 
-*The authenticity of host '[92.168.45.3]:22' can't be established.
-ED25519 key fingerprint is ... Are you sure you want to continue
-connecting (yes/no/[fingerprint])?*
+*Hi yourusername! You've successfully authenticated, but GitHub does not provide shell access.*
 
-If this is printed, it's correctly done. Type yes and press Enter.
+If this is printed, it's correctly configured. Type yes and press Enter.
 
 ## 5. Log in to github, then create a repository.
 
