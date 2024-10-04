@@ -1,5 +1,5 @@
 
-May 2024
+Oct 2024
 
 # Connect github and RStudio to publish your project
 
@@ -37,7 +37,7 @@ Alternatively, install GitHub Desktop <https://desktop.github.com/>
 ## 2. Create a github account.
 
 Visit <https://github.com/> and click Sign Up. Then follow the
-on-screen instructions. 
+on-screen instructions.
 
 ## 3. Connect RStudio to Git
 
@@ -71,13 +71,13 @@ SSH key Choose a name for your key (e.g. your laptop name,
 
 Apply and Click OK. Ensure to restart RStudio.
 
-(OPTIONAL) Test the SSH connection with GitHub. Open a terminal in RStudio and run: 
+(OPTIONAL) Test the SSH connection with GitHub. Open a terminal in RStudio and run:
 
 > ssh -T git\@github.com
 
 *Hi yourusername! You've successfully authenticated, but GitHub does not provide shell access.*
 
-If this is printed, it's correctly configured. 
+If this is printed, it's correctly configured.
 
 ## 5. Log in to github, then create a repository.
 
@@ -121,7 +121,7 @@ In the Commit message window, type a brief description. Then, Press
 Finally, press the **Push** arrow button
 (in green).
 
-At this stage, you can close two remaining Commit/Push windows. 
+At this stage, you can close two remaining Commit/Push windows.
 
 To verify in github repo online, press refresh button in your browser.
 
@@ -139,10 +139,10 @@ connecting RStudio to github!
 
 <https://medium.com/singapore-rails-learning-group/how-to-push-your-code-to-github-and-publish-your-first-page-8b0e1f4caf2a>
 
-# Troubleshoot 
+# Troubleshoot
 - Unstable Internet connection could cause errors when you push the changes. Try again when the connection becomes stable.
 
-- Is the Terminal tab not visible in RStudio? Press *Ctrl+Shift+P* to bring up Command Palette > Type **Show Terminal** > Press Enter. 
+- Is the Terminal tab not visible in RStudio? Press *Ctrl+Shift+P* to bring up Command Palette > Type **Show Terminal** > Press Enter.
 *Note the option changes from Off to On with Enter key.*
 Restart RStudio and you'll see the Terminal tab.
 
