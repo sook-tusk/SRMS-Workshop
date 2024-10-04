@@ -77,7 +77,7 @@ Apply and Click OK. Ensure to restart RStudio.
 
 *Hi yourusername! You've successfully authenticated, but GitHub does not provide shell access.*
 
-If this is printed, it's correctly configured. Type yes and press Enter.
+If this is printed, it's correctly configured. 
 
 ## 5. Log in to github, then create a repository.
 
