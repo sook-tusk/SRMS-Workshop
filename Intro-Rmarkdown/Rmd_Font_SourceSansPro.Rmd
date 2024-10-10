@@ -1,0 +1,51 @@
+---
+title: "Use custom fonts in a PDF file compiled from Rmarkdown"
+output: pdf_document
+urlcolor: orange
+header-includes:
+   - \usepackage[default]{sourcesanspro}
+   - \usepackage[T1]{fontenc}
+mainfont: sourcesanspro
+---
+
+# 1. Run capabilities() in Console.
+
+If **cairo** shows up in the output as TRUE, you are ready to proceed!
+
+```         
+> capabilities()
+       jpeg         png        tiff       tcltk 
+       TRUE        TRUE        TRUE        TRUE 
+
+        NLS       Rprof     profmem       cairo
+       TRUE        TRUE        TRUE        TRUE 
+```
+
+# 2. In YAML, add the following:
+
+```         
+header-includes:
+   - \usepackage[default]{opensans}
+   - \usepackage[T1]{fontenc}
+mainfont: opensans
+```
+
+Does not work if you omit `header-includes:`
+
+# 3. Notes
+
+*All these three formats work!*
+
+```         
+mainfont: opensans
+mainfont: OpenSans 
+mainfont: Open Sans 
+```
+
+No need to set a *latex_engine*.
+
+*Now, you are ready to customise your font!*
+
+# References
+
+See [Cecina Babich Morrow's page] <https://babichmorrowc.github.io/post/changing-fonts-in-rmarkdown-pdfs/>
