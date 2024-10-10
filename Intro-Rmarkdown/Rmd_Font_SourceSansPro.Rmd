@@ -25,21 +25,23 @@ If **cairo** shows up in the output as TRUE, you are ready to proceed!
 
 ```         
 header-includes:
-   - \usepackage[default]{opensans}
+   - \usepackage[default]{sourcesanspro}
    - \usepackage[T1]{fontenc}
-mainfont: opensans
+mainfont: sourcesanspro
 ```
 
-Does not work if you omit `header-includes:`
+Does not work if you omit `header-includes:`.
+
+In this example, `sourcesanspro` font is used. 
 
 # 3. Notes
 
 *All these three formats work!*
 
 ```         
-mainfont: opensans
-mainfont: OpenSans 
-mainfont: Open Sans 
+mainfont: sourcesanspro 
+mainfont: SourceSansPro
+mainfont: Source Sans Pro 
 ```
 
 No need to set a *latex_engine*.
