@@ -1,11 +1,11 @@
 ---
 title: "Use custom fonts in a PDF file compiled from Rmarkdown"
-output: pdf_document
-urlcolor: orange
 header-includes:
    - \usepackage[default]{sourcesanspro}
    - \usepackage[T1]{fontenc}
 mainfont: sourcesanspro
+urlcolor: orange
+output: pdf_document
 ---
 
 # 1. Run capabilities() in Console.
@@ -44,9 +44,16 @@ mainfont: SourceSansPro
 mainfont: Source Sans Pro 
 ```
 
-No need to set a *latex_engine*.
+There is no need to set a *latex_engine*.
 
-*Now, you are ready to customise your font!*
+It is important to place the output argument at the end of YAML if this is the **first time** you are attempting to test particular options for a resulting PDF file. 
+```
+output: pdf_document
+```
+
+By doing so, *tinytex* in RStudio will attempt to install any additional LaTeX packages needed for a particular Rmarkdown file before compiling as a PDF document.  
+
+Once this is successful, you may move the `output: pdf_document` before the `header-includestop:` arguments. This is to make the resulting document   immediately apparent. *Now, you are ready to customise your font!*
 
 # References
 
