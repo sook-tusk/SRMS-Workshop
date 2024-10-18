@@ -29,6 +29,11 @@ hist(cars$dist)
 
 Note that the `echo = FALSE` suppresses the printing of the code, `hist(cars$dist)`.
 
+# Comments in Rmarkdown 
+Comments in Rmarkdown are indicated by `<!-- comments -->`.
+<!-- Note that the `echo = FALSE` suppresses the printing of the code, `hist(cars$dist)`. -->
+
+
 # Reference
 
 To learn cross-referencing for Tables, see <https://bookdown.org/yihui/rmarkdown-cookbook/cross-ref.html>
