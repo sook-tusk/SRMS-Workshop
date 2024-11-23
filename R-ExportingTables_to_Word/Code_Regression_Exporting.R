@@ -78,9 +78,23 @@ fit <- c("nobs", "r.squared", "adj.r.squared" )
 modelsummary(models, stars = TRUE, gof_map = fit) 
 
 ####### EXPORT TO DOCX: #######
-# library("eoffice")
+# install.packages("eoffice")
+# install.packages("pandoc")
+
+library("eoffice")
 modelsummary(models, stars = TRUE, gof_map = fit, 
         output = "R-ExportingTables_to_Word/R_Tables/Regression.docx")
 
+####### Launch the Word file from the FULL PATH ####### 
+# Windows: use shell.exec
+shell.exec("W:/path/path/R-ExportingTables_to_Word/R_Tables/Regression.docx") 
+# Mac: use system
+# system("open /Users/yourname/path/Regression.docx") # Mac
+
+
+# === How to check the full path in Mac ===
+# in Finder, locate a file.
+# Press Contrl before clicking, to bring up the drop-down menu. 
+# Then select Get Info to reveal the full path.
 
 ### End ###
