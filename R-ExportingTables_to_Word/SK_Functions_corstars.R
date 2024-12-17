@@ -1,29 +1,31 @@
 
-# Source:
-# http://www.sthda.com/english/wiki/elegant-correlation-table-using-xtable-r-package
-
 # x is a matrix containing the data
 # method : correlation method. "pearson"" or "spearman"" is supported
 # removeTriangle : remove upper or lower triangle
 # results :  if "html" or "latex"
 # the results will be displayed in html or latex format
 
-## Sook Kim tweaks the code, March 2023
+## Sook Kim last updated: Dec 2024
 
+#===================================
 # 3 decimals
+#===================================
 fn_corstars <- function(x, method = c("pearson", "spearman"), removeTriangle = c("upper", "lower"),
                      result = c("none", "html", "latex")) {
   # Compute correlation matrix
+  if (!require("Hmisc")) install.packages("Hmisc"); 
+  library("Hmisc")
+  
   require(Hmisc)
   x <- as.matrix(x)
   correlation_matrix <- rcorr(x, type = method[1])
-  R <- correlation_matrix$r # Matrix of correlation coeficients
+  R <- correlation_matrix$r # Matrix of correlation coefficients
   p <- correlation_matrix$P # Matrix of p-value
 
-  ## Define notions for significance levels; spacing is important.
+  ## Define significance levels; spacing is important.
   mystars <- ifelse(p < .0001, "*** ", ifelse(p < .001, "*** ", ifelse(p < .01, "**  ", ifelse(p < .05, "*   ", "    "))))
 
-  ## trunctuate the correlation matrix to two decimal
+  ## truncate the correlation matrix to THREE decimal
   R <- format(round(cbind(rep(-1.11, ncol(x)), R), 3))[, -1]
 
   ## build a new matrix that includes the correlations with their appropriate stars
@@ -59,24 +61,28 @@ fn_corstars <- function(x, method = c("pearson", "spearman"), removeTriangle = c
   }
 }
 
-################################################
+#===================================
 ## 2 decimals
+#===================================
 fn_corstars_ <- function(x, method = c("pearson", "spearman"), removeTriangle = c("upper", "lower"),
                      result = c("none", "html", "latex")) {
   # Compute correlation matrix
+  if (!require("Hmisc")) install.packages("Hmisc"); 
+  library("Hmisc")
+  
   require(Hmisc)
   x <- as.matrix(x)
   correlation_matrix <- rcorr(x, type = method[1])
   R <- correlation_matrix$r # Matrix of correlation coeficients
   p <- correlation_matrix$P # Matrix of p-value
 
-  ## Define notions for significance levels; spacing is important.
+  ## Define significance levels; spacing is important.
   mystars <- ifelse(p < .0001, "****", ifelse(p < .001, "*** ", ifelse(p < .01, "**  ", ifelse(p < .05, "*   ", "    "))))
 
-  ## trunctuate the correlation matrix to two decimal
+  ## truncate the correlation matrix to two decimal
   R <- format(round(cbind(rep(-1.11, ncol(x)), R), 2))[, -1]
 
-  ## build a new matrix that includes the correlations with their apropriate stars
+  ## build a new matrix that includes the correlations with their appropriate stars
   Rnew <- matrix(paste(R, mystars, sep = ""), ncol = ncol(x))
   diag(Rnew) <- paste(diag(R), " ", sep = "")
   rownames(Rnew) <- colnames(x)
@@ -109,4 +115,8 @@ fn_corstars_ <- function(x, method = c("pearson", "spearman"), removeTriangle = 
   }
 }
 
-# End
+## End ##
+
+# Source:
+# http://www.sthda.com/english/wiki/elegant-correlation-table-using-xtable-r-package
+
