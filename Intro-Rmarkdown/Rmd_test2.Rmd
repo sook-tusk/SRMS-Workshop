@@ -1,25 +1,34 @@
 ---
 title: "Rmarkdown with Figure reference"
 author: "9622876"
-date: "2024-09-17"
+date: "September 2024"
 output:
   bookdown::word_document2: 
     # toc: true
     fig_caption: yes
     number_sections: true
+    global_numbering: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Including Plots
 
-You can also embed plots, for example: See Figure \@ref(fig:speed).
+# Comments in Rmarkdown 
+Comments in Rmarkdown are indicated by `<!-- comments -->`.
+<!-- Note that the `echo = FALSE` suppresses the printing of the code, `hist(cars$dist)`. -->
+
+
+# Figure references
+
+You can embed plots, for example: See Figure \@ref(fig:speed).
 
 ```{r speed, fig.cap="Histogram of speed"}
 hist(cars$speed)
 ```
+
+\newpage
 
 See Figure \@ref(fig:dist).
 
@@ -29,10 +38,25 @@ hist(cars$dist)
 
 Note that the `echo = FALSE` suppresses the printing of the code, `hist(cars$dist)`.
 
-# Comments in Rmarkdown 
-Comments in Rmarkdown are indicated by `<!-- comments -->`.
-<!-- Note that the `echo = FALSE` suppresses the printing of the code, `hist(cars$dist)`. -->
+\newpage
 
+# Caveats
+The figure name in the code chunk option can be sensitive! 
+Experiment with names containing characters and numbers. For example, try with `hist-mpg2`. Does the figure number and title display correctly?
+```{r hist-mpg2, fig.cap="Boxplot of mpg"}
+boxplot(mtcars$mpg)
+```
+
+
+\newpage 
+
+Note that an underscore causes an error. Do not use use underscore as in `hist_mpg`
+```{r hist_mpg, fig.cap="Histogram of mpg"}
+hist(mtcars$mpg)
+```
+
+# Your task
+Experiment with various code chunk options. What else can you improve with the resulting converted document?
 
 # Reference
 
