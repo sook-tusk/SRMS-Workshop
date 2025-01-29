@@ -1,10 +1,9 @@
 
 # RStudio keyboard shortcuts (for R)
 
-Please augment the list as necessary. 
-
 |                 | Mac             | Windows          |
 |-----------------|-----------------|------------------|
+| New R script    | Cmd + Shift + N | Ctrl + Shift + N |
 | Run code        | Cmd + Enter     | Ctrl + Enter     |
 | (Un)Comment, #  | Cmd + /         | Ctrl + /         |
 | Assign, <-      | Option + _      | Alt + _          |
@@ -13,5 +12,7 @@ Please augment the list as necessary.
 | Command Palette | Cmd + Shift + P | Ctrl + Shift + P |
 | Help example, ? | ?head           | ?head            |
 
-**Note**: The `(Un)Comment` shortcut has been customised from
-  *Cmd(Ctrl) + Shift + C*.
+**Note**: The `(Un)Comment, #` shortcut has been customised from
+ *Cmd(Ctrl) + Shift + C*.
+
+To modify shortcuts, use **Tools** menu.
