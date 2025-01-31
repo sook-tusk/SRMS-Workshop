@@ -56,9 +56,9 @@ R --version
 
 2. Launch a browser of your choice and type *download RStudio* in the search bar.
 
-3. Go to the Posit page and download *ubutu .deb* file which is appropriate for your OS.
+3. Go to the Posit page and download *ubuntu .deb* file which is appropriate for your OS.
 
-4. (in Terminal), we will go to the Downloads folder and indicate the downloaded .deb file to install by typing:
+4. (in Terminal), we will go to the *Downloads* folder and indicate the downloaded *.deb* file to install by typing:
 ```
 cd Downloads
 sudo dpkg -i rstudio-2024.12.0-467-amd64.deb
