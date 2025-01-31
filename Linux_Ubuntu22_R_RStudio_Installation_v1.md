@@ -2,7 +2,7 @@
 # Installing R and RStudio for Linux users
 
 ## How to enter password
-Just enter your password when you are asked for it. It won't print anything as you type but it works.
+Type your password when you are prompted to enter. It won't print anything as you type but it works.
 
 Then press enter.
 
@@ -10,7 +10,7 @@ Then press enter.
 
 1. Before starting, it’s a good idea to update your system packages to their latest versions.
 
-Press *Ctrl+Alt+T* open **Terminal** (or access via Applications).
+Press *Ctrl+Alt+T* to open **Terminal** (or access via Applications).
 In Terminal, type these one at a time.
 
 ```
@@ -75,8 +75,8 @@ This will complete the installation process.
 
 ## Example entry in Terminal
 ```
-sook@sook-Lenovo-ideapad-710S-13IKB:~$ cd Downloads
-sook@sook-Lenovo-ideapad-710S-13IKB:~/Downloads$ sudo dpkg -i rstudio-2024.12.0-467-amd64.deb
+yourname@yourname-Lenovo-ideapad-710S-13IKB:~$ cd Downloads
+yourname@yourname-Lenovo-ideapad-710S-13IKB:~/Downloads$ sudo dpkg -i rstudio-2024.12.0-467-amd64.deb
 ```
 
 ## Launch RStudio
