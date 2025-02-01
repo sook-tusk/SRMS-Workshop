@@ -104,7 +104,7 @@ sudo R -e 'install.packages("xml2", dependencies = T, INSTALL_opts = c("--no-loc
 sudo R -e 'install.packages("tidyverse")'
 ```
 4. When installation was complete, launch RStudio and load `tidyverse`. Then, test if it works as intended. Here's an example:
-```
+```r
 library(tidyverse)
 a <- mtcars %>% select(mpg)
 a
