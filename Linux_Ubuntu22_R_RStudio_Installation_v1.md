@@ -86,7 +86,7 @@ Alternatively, in terminal, typing *rstudio*
 will launch it. 
 
 ## Install tidyverse in Terminal
-RStudio may not install the `tidyverse` package properly as dependencies cannot not installed somehow. You can use Terminal instead. 
+RStudio may not install the `tidyverse` package properly as dependencies cannot not installed somehow. In such case, you can use Terminal instead. 
 
 1. In terminal, run the following before installing `tidyverse`.
 ```
