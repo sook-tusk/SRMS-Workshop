@@ -41,7 +41,7 @@ sudo apt install r-base
 
 You'll be prompted with a question below:
 ```
-do you want to continue? y/n 
+do you want to continue? Y/n 
 ```
 Type Y
 
@@ -51,12 +51,12 @@ R --version
 ```
 
 ## To download RStudio
-1. Check your Ubutun version by accessing *Settings > About*.
+1. Check your Ubuntu version by accessing *Settings > About*.
 (mine is Ubuntu 22)
 
 2. Launch a browser of your choice and type *download RStudio* in the search bar.
 
-3. Go to the Posit page and download *ubuntu .deb* file which is appropriate for your OS.
+3. Go to the Posit page and download *ubutu .deb* file which is appropriate for your OS.
 
 4. (in Terminal), we will go to the *Downloads* folder and indicate the downloaded *.deb* file to install by typing:
 ```
@@ -85,5 +85,33 @@ Once installation was successful, locate RStudio in Applications by typing *RStu
 Alternatively, in terminal, typing *rstudio*
 will launch it. 
 
+## Install tidyverse in Terminal
+RStudio may not install the `tidyverse` package properly as dependencies cannot not installed somehow. You can use Terminal instead. 
+
+1. In terminal, run the following before installing `tidyverse`.
+```
+sudo apt install libssl-dev libcurl4-openssl-dev unixodbc-dev libxml2-dev libmariadb-dev libfontconfig1-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+```
+Note this will take a while. 
+
+2. Then, proceed with the `xml2` installation.
+
+```
+sudo R -e 'install.packages("xml2", dependencies = T, INSTALL_opts = c("--no-lock"))'
+```
+3. Now, you are ready to install `tidyverse`.
+```
+sudo R -e 'install.packages("tidyverse")'
+```
+4. When installation was complete, launch RStudio and load `tidyverse` and test if it works as intended. Here's an example:
+```
+library(tidyverse)
+a <- mtcars %>% select(mpg)
+a
+```
+
+
 ## Reference
 https://gcore.com/learning/how-to-install-r-on-ubuntu/
+
+https://medium.com/@jamie84mclaughlin/installing-r-and-the-tidyverse-on-ubuntu-20-04-60170020649b
