@@ -1,0 +1,78 @@
+---
+title: "RMarkdown to PDF using stargazer"
+author: "5895464"
+output:
+  bookdown::pdf_document2:
+    df_print: kable
+    highlight: haddock
+    number_sections: true
+    latex_engine: xelatex
+  word_document: default
+fontsize: 10pt
+urlcolor: blue
+linkcolor: orange
+header-includes:
+- \usepackage{dcolumn}
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+- \fancyhead[C]{DASS}
+- \fancyhead[L]{Practical 4A}
+- \fancyhead[R]{Section 4}
+- \fancyfoot[C]{\thepage}
+bibliography: BibListReferences.bib
+link-citations: true
+---
+
+\thispagestyle{empty}
+
+\newpage
+
+\setcounter{page}{1}
+
+
+# Introduction
+
+Referencing examples:
+
+Present your argument. This can be found in earlier studies [see @Anscombe1973, p.2; @Kabacoff2015]. @Kabacoff2015 [p.20] argues that..
+
+```{r, echo = FALSE, message = FALSE}
+library(stargazer)
+```
+
+
+```{r cars}
+model_A <- lm(dist ~ speed, data = cars)
+```
+
+
+```{r, results = 'asis'}
+stargazer(model_A, type = "latex", title = "Model Results", align = TRUE, header = FALSE)
+```
+
+\newpage 
+
+# Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, fig.cap = "Pressure Plot", fig.align = "center", fig.height = 4, fig.width = 5}
+plot(pressure ~ temperature, data = pressure)
+```
+
+Note: This is a scatterplot illustrating the vapor pressure of Mercury as a Function of Temperature, which is based on R's built-in dataset, `pressure`. 
+
+\newpage 
+
+Here's a quick glance of the *pressure* dataset.
+
+```{r scatterp, echo = FALSE}
+knitr::kable(head(pressure), caption = "Pressure data")
+```
+
+# Your task
+Add cross-referencing for the Figures and Tables above.
+
+\newpage 
+
+# References

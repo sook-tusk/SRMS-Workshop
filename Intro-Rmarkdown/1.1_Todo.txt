@@ -1,13 +1,13 @@
 
 Todo
 
-# Learning R
+# LEARNING R
 - Study how to recode, factorise
   Don't understand summarise()
 
 - Study tidyverse functions
 
-# Assessment
+# ASSESSMENT
 
 ## Assessment 1 prep
 - Find a dataset

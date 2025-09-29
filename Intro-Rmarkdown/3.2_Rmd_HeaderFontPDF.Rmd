@@ -1,0 +1,76 @@
+---
+title: "3.2 Using fancyhdr and custom fonts"
+author: "98555521"
+mainfont: Times New Roman
+output:
+  bookdown::pdf_document2:
+    toc: true
+    df_print: kable
+    highlight: haddock
+    number_sections: true
+    latex_engine: xelatex
+fontsize: 12pt
+urlcolor: blue
+linkcolor: orange
+header-includes:
+- \usepackage{dcolumn}
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+- \fancyhead[L]{Practical 4A}
+- \fancyhead[C]{DASS}
+- \fancyhead[R]{Section 4}
+- \fancyfoot[C]{\thepage}
+---
+---
+title: "3.1 First PDF conversion"
+author: "9522221"
+output:
+  pdf_document:
+    toc: true
+fontsize: 10pt
+urlcolor: blue
+linkcolor: orange
+---
+
+\thispagestyle{empty}
+
+\newpage
+
+\setcounter{page}{1}
+
+<!-- The option, `\setcounter{page}{1}` indicates that the title page is not counted in the pagination.  -->
+
+<!-- https://ctan.org/pkg/fancyhdr?lang=en-->
+
+\newpage
+
+# Using a custom font
+We need to specify xelatex as latex_engine.
+
+Set the font, and specify xelatex as latex_engine.
+
+```
+mainfont: Times New Roman
+output: 
+  bookdown::pdf_document2: 
+    latex_engine: xelatex
+```
+
+\newpage
+
+# Data visualisation
+
+See Figure \@ref(fig:speed).
+
+```{r speed, fig.cap="Histogram of speed"}
+hist(cars$speed)
+```
+
+
+\newpage
+
+Figure \@ref(fig:dist) illustrates...
+
+```{r dist, echo=FALSE, fig.cap="Histogram of dist"}
+hist(cars$dist)
+```

@@ -1,7 +1,6 @@
 ---
-title: "Rmarkdown with Figure reference"
+title: "2.2 Figure titles"
 author: "9622876"
-date: "September 2024"
 output:
   bookdown::word_document2: 
     # toc: true
@@ -14,15 +13,9 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
-# Comments in Rmarkdown 
-Comments in Rmarkdown are indicated by `<!-- comments -->`.
-<!-- Note that the `echo = FALSE` suppresses the printing of the code, `hist(cars$dist)`. -->
-
-
 # Figure references
 
-You can embed plots, for example: See Figure \@ref(fig:speed).
+See Figure \@ref(fig:speed).
 
 ```{r speed, fig.cap="Histogram of speed"}
 hist(cars$speed)
@@ -31,6 +24,8 @@ hist(cars$speed)
 \newpage
 
 See Figure \@ref(fig:dist).
+
+Dist indicates stopping distance (ft).
 
 ```{r dist, echo=FALSE, fig.cap="Histogram of dist"}
 hist(cars$dist)
@@ -42,7 +37,11 @@ Note that the `echo = FALSE` suppresses the printing of the code, `hist(cars$dis
 
 # Caveats
 The figure name in the code chunk option can be sensitive! 
-Experiment with names containing characters and numbers. For example, try with `hist-mpg2`. Does the figure number and title display correctly?
+Experiment with names containing characters and numbers. For example, try with `hist-mpg2`.
+
+See Figure \@ref(fig:hist-mpg2).
+
+Does the figure number and title display correctly?
 ```{r hist-mpg2, fig.cap="Boxplot of mpg"}
 boxplot(mtcars$mpg)
 ```
@@ -50,10 +49,16 @@ boxplot(mtcars$mpg)
 
 \newpage 
 
-Note that an underscore causes an error. Do not use use underscore as in `hist_mpg`
+See Figure \@ref(fig:hist_mpg2).
+
+Note that an underscore causes an error. Do not use use underscore as in `hist_mpg` as an figure ID.
 ```{r hist_mpg, fig.cap="Histogram of mpg"}
 hist(mtcars$mpg)
 ```
+
+# Comments in Rmarkdown 
+Comments in Rmarkdown are indicated by `<!-- comments -->`.
+<!-- Note that the `echo = FALSE` suppresses the printing of the code, `hist(cars$dist)`. -->
 
 # Your task
 Experiment with various code chunk options. What else can you improve with the resulting converted document?

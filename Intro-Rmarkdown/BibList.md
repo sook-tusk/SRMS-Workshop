@@ -1,6 +1,8 @@
 ---
-title: "References"
-output: html_document
+title: "Semi-automating References"
+output:
+  word_document: default
+  html_document: default
 bibliography: BibListReferences.bib
 nocite: |
   @WickhamGrolemund2017
@@ -9,23 +11,25 @@ nocite: |
   [@Healy2018]
 ---
 
+A report is written in plain English (Author, 2024) *without using citationkey*, such as `[@author2024]`. 
+See below.
 
-<!-- Instructions begin here 
+This can be found in earlier studies (Anscombe, 1973; Kabacoff, 2015).
 
-A report is written in plain English (Author, 2024) without using citationkey, such as [@author2024]. Is it possible to just print the references list?
+Is it possible to just print the references list?
     
-Yes, nocite creates a Bibliography list.
+Yes, **nocite** creates a Bibliography list. Have a closer look at the end of the converted document! This markdown file will produce three items in the bibliography list at the end. 
 
-Ensure to indent. Otherwise, it won't compile! 
+Please note that *you still need a bib file*! Ensure to indent under `nocite`. Otherwise, this md file won't compile! 
 Note that there is no need to sort the list.
 (It'll be easier to keep track if you do, though!).
 Unlike in-text citations, square brackets are not required.
 
-Check the entry in html. Address any issues in Zotero. 
 To convert to a Word file, use as below.
 
 You can use the full path for the bib file.
 
+```
 ---
 title: "References"
 output: word_document
@@ -35,10 +39,12 @@ nocite: |
   @Anscombe1973
   @Kabacoff2015
 ---
+```
 
 Need to use your own docx Ref template?
 Must change the ref system style? See below.
 
+```
 ---
 title: "References"
 output:
@@ -51,9 +57,8 @@ nocite: |
   @Anscombe1973
   @Kabacoff2015
 ---
+```
 
-End of Instructions.
+Hardcore semiautomation individuals can consider `includetext` field in Word. It has its own caveat, though!
 
-Hardcore semiautomation individuals can consider includetext field in Word. It has its own caveat, though!
-
--->
+# References
