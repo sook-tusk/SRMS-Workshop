@@ -21,16 +21,6 @@ header-includes:
 - \fancyhead[R]{Section 4}
 - \fancyfoot[C]{\thepage}
 ---
----
-title: "3.1 First PDF conversion"
-author: "9522221"
-output:
-  pdf_document:
-    toc: true
-fontsize: 10pt
-urlcolor: blue
-linkcolor: orange
----
 
 \thispagestyle{empty}
 
