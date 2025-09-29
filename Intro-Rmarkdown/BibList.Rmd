@@ -1,8 +1,6 @@
 ---
 title: "Semi-automating References"
-output:
-  word_document: default
-  html_document: default
+output: html_document
 bibliography: BibListReferences.bib
 nocite: |
   @WickhamGrolemund2017
