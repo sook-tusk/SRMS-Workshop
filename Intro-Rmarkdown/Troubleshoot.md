@@ -40,7 +40,7 @@ Restart RStudio and convert an Rmd file again.
 See the full discussion here:
 <https://github.com/rstudio/rstudio/issues/11552>
 
-# Compile errpr
+# Compile error
 It is important to place the output argument at the end of YAML if this is the **first time** you are attempting to test a particular font for a resulting PDF file.
 
 ```         
