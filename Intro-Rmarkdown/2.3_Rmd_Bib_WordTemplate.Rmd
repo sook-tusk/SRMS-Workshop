@@ -7,7 +7,7 @@ output:
     fig_caption: yes
     number_sections: true
     global_numbering: true
-    reference_docx: example_custom_template.docx
+    reference_docx: example_template.docx
 
 bibliography: BibListReferences.bib
 link-citations: true
