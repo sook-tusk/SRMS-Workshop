@@ -8,7 +8,7 @@ output:
 
 # Embedding R code
 
-We press **Ctrl (Cmd) + Alt + I**.
+We press **Ctrl (Cmd) + Alt + I **.
 
 ```{r}
 
@@ -48,8 +48,6 @@ p1_carspeed
 
 #  Styles and formatting 
 Use a Word template. Go to Styles tab and choose Heading. Modify as appropriate. Specify at the top as reference_docx:yourtemplate.docx.
-
-Also see BB for tutorial on Styles. 
 
 # To create a Word document using the current Rmd file
 Click on Knit (the icon looks similar to 🧶).
