@@ -1,0 +1,53 @@
+---
+title: "Source R scripts and insert graphics in Rmd"
+mainfont: Times New Roman
+output:
+  bookdown::pdf_document2:
+    toc: false
+    latex_engine: xelatex
+fontsize: 12pt
+urlcolor: orange
+---
+
+# Background
+Your data analysis steps typically involve multiple complex stages and you'll be selective in presenting results.
+
+# Sourcing R scripts
+One way that facilitates the process is to run the entire cleaning R script file that allows us to load the objects, rather than embedding complex structure of the code. Please note that this is an example only.
+
+**Example**:
+
+```{r, eval = F}
+source("P:/path/R-Source-Scripts/Code_to_test1.R") # Specify the full path for an R script
+```
+
+**Testing yours**:
+
+```{r, echo = F, message=F}
+# Specify the full path for an R script to avoid any erros
+source("Code_to_test1.R") 
+```
+
+As an R script is run, we now have access to objects (Tables, and Figures) we need to present in a report. Let's imagine that we are presenting a Figure on car speed.
+
+Figure \@ref(fig:p1) displays ...
+
+```{r p1, fig.cap="Histogram of speed in cars data"}
+# Figure
+p_hist_cars_speed
+
+# Desc stats (specify obj name)
+# descstats
+```
+\newpage
+
+# Use *include_graphics*
+Alternatively, you could save individual output in a separate file, and simply insert it in an Rmd file. 
+
+See Figure \@ref(fig:p2).
+
+```{r p2, echo=FALSE, out.width="90%",  fig.cap="Histogram of speed in cars data"}
+knitr::include_graphics("hist_cars_speed.png")
+```
+Consult 
+<https://bookdown.org/yihui/rmarkdown-cookbook/figure-size.html> for more details.
