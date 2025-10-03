@@ -19,7 +19,7 @@ As such, R Code will be placed under ```{r}, and enclosed in the grey box with t
 
 We do not need the output such as tables and figures, but just the code. This is achieved by specifying **eval=FALSE**.
 
-This means that you do not actually run the code, but simply PRINT the code. 
+This means that you do not actually run the code to produce any output, but simply PRINT the code. 
 
 # Prepare your code and export it to a Word file
 Put your R code in the blank (line 46). Save. Then, click on Knit (the icon looks similar to 🧶 ).
