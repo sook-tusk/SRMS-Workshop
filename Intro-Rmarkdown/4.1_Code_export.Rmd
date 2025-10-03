@@ -1,0 +1,40 @@
+---
+title: "Export R code to Word"
+output:
+  word_document:
+    number_sections: yes
+    reference_docx: example_template.docx
+---
+
+# Rmarkdown code chunk option, *eval*
+To export R code to Word, we can use Rmarkdown. 
+
+We do not need the output such as tables and figures, but just the code. This is achieved by specifying **eval=FALSE** in R code chunks.
+
+This means that you do not actually run the code to produce any output, but simply PRINT the code. 
+
+# Prepare your code and export it to a Word file
+Place your R code in the blank (line 36). Save. Then, execute the conversion by pressing *Ctrl+Shift+K* (*Cmd+Shift+K* in Mac) or your custom shortcut.
+
+If you have an opened (code-exported) word document already, ensure to close it before you proceed. 
+
+Once R launches the exported Word document, you can copy the code in the grey box to the Appendix of your report. Make sure this step works correctly. Test it several times to get it right! Good luck!
+
+Should you wish, you can adjust formatting in the `example_template.docx` before exporting.
+
+**Example**:
+```{r, eval= FALSE}
+library("tableone")   # Desc stats
+library("janitor")    # Cross-tabs, tabyl()
+
+## > Step 1: Read and inspect the data ----
+temp <- read_csv("simd_cleaned.csv")
+```
+
+**Your code**:
+```{r, eval= FALSE}
+
+
+
+```
+
