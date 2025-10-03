@@ -36,6 +36,7 @@ nocite: |
   @WickhamGrolemund2017
   @Anscombe1973
   @Kabacoff2015
+  @Healy2018
 ---
 ```
 
@@ -54,6 +55,7 @@ nocite: |
   @WickhamGrolemund2017
   @Anscombe1973
   @Kabacoff2015
+  @Healy2018
 ---
 ```
 
