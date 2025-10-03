@@ -13,23 +13,21 @@ bibliography: BibListReferences.bib
 link-citations: true
 ---
 
-   
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Add references
 
-Present your argument. This can be found in earlier studies [see @Anscombe1973, p.2; @Kabacoff2015]. 
+Present your argument. This can be found in earlier studies [see @Anscombe1973, p.2; @Kabacoff2015].
 
-@Kabacoff2015 [p.20] argues that... 
+@Kabacoff2015 [p.20] argues that...
 
-**Use square brackets and add a citation key following @ symbol.** You may indicate page numbers following the citation key. *Please note that these in-text citations needs to be sorted!*
+**Use square brackets and add a citation key following \@ symbol.** You may indicate page numbers following the citation key. *Please note that these in-text citations need to be sorted!*
 
 # Bib file
-To obtain a bib file, you need to install Better BibTex that bridges Zotero and markdown. Visit here:
-<https://retorque.re/zotero-better-bibtex/>.
-You can download the latest version here: <https://github.com/retorquere/zotero-better-bibtex/releases>. Choose .xpi file only (you do not need other files). As the whole procedure can be involved, it would be sensible to consider ways to revisit it at a later stage!
+
+To obtain a bib file, you need to install **Better BibTex** that bridges Zotero and markdown. Visit here: <https://retorque.re/zotero-better-bibtex/>. You can download the latest version here: <https://github.com/retorquere/zotero-better-bibtex/releases>. Choose .xpi file only (you do not need other files). As the whole procedure can be involved, it would be sensible to consider ways to revisit it at a later stage!
 
 \newpage
 
@@ -41,25 +39,42 @@ See Figure \@ref(fig:speed).
 hist(cars$speed)
 ```
 
+# Creating a Word template
 
-\newpage
+We use the converted docx document, `2.3_Rmd_Bib_WordTemplate.docx` as a template.
 
-Figure \@ref(fig:dist) illustrates...
+To do so, we save `2.3_Rmd_Bib_WordTemplate.docx`  as `custom_template.docx`.
 
-```{r dist, echo=FALSE, fig.cap="Histogram of dist"}
-hist(cars$dist)
-```
+We are now ready to customise this template file.
 
-#  Styles and formatting 
-We use the converted docx document, `2.3_Rmd_Bib_WordTemplate.docx` as a template. 
+## Customising heading
 
-To do so, we rename `2.3_Rmd_Bib_WordTemplate.docx` and save as `custom_template.docx`. 
+Open `custom_template.docx` and apply your own format to Heading 1. 
 
-We are now ready to customise this template file. 
+To customize, we use `Styles` in Word menu.
 
-Open `custom_template.docx` and apply your own format to Heading 1. Place the cursor in any Heading 1. In Word, access **Styles tab** and choose **Heading 1** Modify as appropriate. Do not forget to include page numbers!
+- First, place the cursor in any Heading 1. 
+- Then, access **Styles tab** 
+- You will see **Heading 1** is selected. 
+- Reveal **Modify** menu (in Windows: simply right-click, in Mac: press Control and click *Heading 1*)
+- Apply your own formatting (e.g. font size)
 
-When you are satisfied with the new template, we will specify this new template in the YAML header at the top as `reference_docx:custom_template.docx`.
+Do the same with other Styles. Do not forget to include page numbers!
 
+## Your task: customising Function Tok
+
+- Click on *hist* under *3 Data visualisation*. Currently, `FunctionTok` is displayed in dark blue. 
+- In Word, go to Styles and locate `FunctionTok` before accessing *Modify* menu. 
+- Customise the `FunctionTok` Style by applying a different colour of your choice.
+
+## Your task
+Verify the Style of **$** symbol used in the following code.
+
+> `hist(cars$speed)`
+
+What is this particular style called? Customise other *Styles* to your liking. 
+
+## Using a custom Word template in an Rmd file
+When you are satisfied with the new template, we will specify this new template in a new Rmd file. In the YAML header at the top, declare the template as `reference_docx:custom_template.docx`.
 
 # References
