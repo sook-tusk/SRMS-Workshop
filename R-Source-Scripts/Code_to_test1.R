@@ -12,7 +12,8 @@ getwd()
 # Print R's built-in dataset
 cars 
 
-summary(cars)
+library(ggplot2)
+p_hist_cars_speed <- ggplot(cars, aes(x = speed)) + 
+                      geom_histogram(binwidth = 3)
+ggsave(p_hist_cars_speed, file = "hist_cars_speed.png")
 
-p1_carspeed <- hist(cars$speed)
-p1_carspeed

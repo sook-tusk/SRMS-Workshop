@@ -13,12 +13,12 @@ getwd()
 #H------------------------------
 ##> 1. Clean
 #H------------------------------
-source("R-Source-Scripts/Code_to_test1.R")
+source("path/Code_to_test1.R")
 
 #H------------------------------
 ##> 2. Analysis
 #H------------------------------
-# source("YOURFILE.R")
+source("path/YOURFILE.R")
 
 ### End ###
 
