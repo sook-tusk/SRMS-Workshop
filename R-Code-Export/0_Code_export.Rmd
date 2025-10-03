@@ -1,25 +1,38 @@
 ---
-title: "Code export to Word"
-author: "yourname"
-output: word_document
+title: "Export R code to Word"
+output:
+  word_document:
+    number_sections: yes
+    reference_docx: 0_Template_Code_export.docx
 ---
 
+# Rmarkdown basics
 Here's a brief tutorial. To export R code to Word, we can use Rmarkdown. Don't worry, we only use a very simple Rmarkdown file. 
 
-Where does the code go? R Code will be placed under ```{r}. This means R code is enclosed in the curly brackets. We do not need the output such as tables and figures, but just the code. So, we specify eval=FALSE.
+Where does the code go? In general, three backticks, 
+
+> ``` 
+
+indicates any code block. One can identify a programming language using curly brackets. In this instance, it is R, expressed as `{r}`.
+
+As such, R Code will be placed under ```{r}, and enclosed in the grey box with three backticks. 
+
+We do not need the output such as tables and figures, but just the code. This is achieved by specifying **eval=FALSE**.
 
 This means that you do not actually run the code, but simply PRINT the code. 
 
-Put your R code in the blank (line 25). Save. Then, click on Knit (the icon looks similar to 🧶 ).
-The icon resembles a needle and thread as Knit implies. It is placed with other menu icons at the top, just under the filename.
+# Prepare your code and export it to a Word file
+Put your R code in the blank (line 46). Save. Then, click on Knit (the icon looks similar to 🧶 ).
 
-Alternatively, you can press Ctrl+Shift+K (or Cmd+Shift+ in Mac)
+The icon resembles a needle and thread as Knit implies. It is placed with other menu icons at the top, just under the filename. 
+
+Alternatively, you can press Ctrl+Shift+K (or Cmd+Shift+K in Mac)
 
 If you have an opened (code-exported) word document already, ensure to close it before you Knit. I hope it works!
 
 Once R launches the exported Word document, you can copy the code in the grey box to the Appendix of your report. Make sure this step works correctly. Test it several times to get it right! Good luck!
 
-Example:
+**Example**:
 ```{r, eval= FALSE}
 library("tableone")   # Desc stats
 library("janitor")    # Cross-tabs, tabyl()
@@ -28,16 +41,10 @@ library("janitor")    # Cross-tabs, tabyl()
 temp <- read_csv("simd_cleaned.csv")
 ```
 
-Your code:
+**Your code**:
 ```{r, eval= FALSE}
 
 
 
 ```
 
-How do you create this Rmarkdown file?
-
-To create a Rmarkdown file, in RStudio, go to File > New file > R Markdown...
-When a new window pops up, choose Word as Default Output Format. Click OK.
-
-The default Rmarkdown file looks more complex than this. Explore the file as necessary.
