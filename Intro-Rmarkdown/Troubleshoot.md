@@ -95,8 +95,15 @@ For a discussion on `fontenc` and the usage of pdfLaTex, see [A discussion on fo
     <https://tex.stackexchange.com/questions/664/why-should-i-use-usepackaget1fontenc>
 
 
-# Other errors  
-Remove emoticons or special characters not allowed in particular options.
+# Special characters can cause an error
+Remove emoticons or special characters, as these are not allowed in 
+particular options.
+For instance, using *textcolor* in LaTeX does not permit an underscore. 
+
+```
+\textcolor{violet}{using an object, data_v2, produce a table.}
+```
+
 
 # General tips
 If at all possible, using tinytex available in RStudio would be ideal. Fixing errors relating to LaTeX can be challenging for first time users.
