@@ -99,7 +99,8 @@ For a discussion on `fontenc` and the usage of pdfLaTex, see [A discussion on fo
 Remove emoticons or special characters, as these are not allowed in 
 particular options.
 For instance, using *textcolor* in LaTeX does not permit an underscore. 
-
+You will see an rmarkdown error message that you should enclose $ or $ is missing. 
+This is not the case, but it actually indicates an error associated with the usage of unpermitted characters or symbols.
 ```
 \textcolor{violet}{using an object, data_v2, produce a table.}
 ```
