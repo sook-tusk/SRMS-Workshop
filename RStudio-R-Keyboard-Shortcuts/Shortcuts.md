@@ -17,3 +17,13 @@
  *Cmd(Ctrl) + Shift + C*.
 
 To modify shortcuts, use **Tools** menu.
+
+# Shortcuts for Moving Files/Folders
+
+|                     | Mac (Finder)    | Windows (Explorer)|
+|---------------------|-----------------|-----------------
+|In Download Folder   | Cmd (⌘) + C     | Ctrl + X
+|In Destination Folder| Cmd + Option + V| Ctrl + V
+
+**Note**: To move files from one folder to another,
+Windows users can perform `cut` and `paste`. Mac users accomplish this task by `copy` and `paste`. Once pasting is complete, the original file will be deleted (in Mac).
