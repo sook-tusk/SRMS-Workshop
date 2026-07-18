@@ -1,0 +1,36 @@
+---
+title: "Quarto using reference"
+number-sections: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+```
+
+
+# Figure references
+See @fig-1.
+```{r}
+#| label: fig-1
+#| fig-cap: "Histogram of speed"
+
+# hist(mtcars$wt)
+ 
+ggplot(mtcars, aes(x = wt)) +   geom_histogram(binwidth = 0.3)
+```
+
+## Exercise 1
+Render the document. Fix the errors by adding the figure number and title appropriately.
+```{r}
+#| label: fig-1
+#| fig-cap: Boxplot of mpg
+
+# hist(cars$speed)
+ 
+ggplot(mtcars, aes(y = mpg)) +   geom_boxplot()
+```

@@ -1,0 +1,30 @@
+---
+title: "Untitled"
+output:
+  word_document: default
+  html_document:
+    df_print: paged
+  pdf_document: default
+date: "2025-10-02"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Inspect cars data
+
+First, ...
+```{r}
+head(cars)
+```
+
+```{r}
+summary(cars)
+```
+
+```{r}
+hist(cars$speed)
+```
+
+

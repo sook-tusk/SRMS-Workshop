@@ -1,0 +1,31 @@
+---
+title: "Example quarto document"
+number-sections: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+# Eval and echo
+
+```{r}
+#| eval: false
+#| echo: true
+  install.packages("tidyverse") 
+```
+
+To check your current path, run:
+```{r}
+#| eval: true
+#| echo: false
+getwd()
+```
+
+We set *echo: true* here.
+```{r}
+#| eval: true
+#| echo: true
+getwd()
+```
+

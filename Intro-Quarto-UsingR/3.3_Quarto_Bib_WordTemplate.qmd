@@ -1,0 +1,86 @@
+---
+title: "3.3 Bibliography and template"
+subtitle: "your subtitle"
+number-sections: true
+format: docx
+bibliography: BibListReferences.bib
+link-citations: true
+# csl: apa.csl
+# csl: https://www.zotero.org/styles/apa
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+```
+
+# Add references
+
+Present your argument. This can be found in earlier studies [@Anscombe1973, p.2; @Kabacoff2015].
+
+@Kabacoff2015 [p.20] argues that...
+
+**To include a citation, switch to *Visual Editor* mode** and click the **Insert** drop-down menu. Then select *Citation*.
+
+**You'll use square brackets and add a citation key following \@ symbol.** You may indicate page numbers following the citation key. *Please note that these in-text citations needs to be sorted!*
+
+# Bib file
+
+To obtain a bib file, you need to install Better BibTex that bridges **Zotero** and **markdown.** Visit here: <https://retorque.re/zotero-better-bibtex/>. You can download the latest version here: <https://github.com/retorquere/zotero-better-bibtex/releases>. Choose .xpi file only (you do not need other files). As the whole procedure can be involved, it would be sensible to consider ways to revisit it at a later stage!
+
+# Citation style
+
+One can define Citation Style Language (CSL) in YAML header. Visit <https://www.zotero.org/styles> to download an appropriate CSL file.
+
+```         
+bibliography: BibListReferences.bib
+link-citations: true
+csl: apa.csl
+```
+
+In the YAML header, you can either specify the path to your local CSL file or provide the URL of a style in the Zotero Style Repository. Note that using the latter method requires an internet connection.
+
+# Styles and formatting
+
+We use the converted docx document, `3.3_Quarto_Bib_WordTemplate.docx` as a template.
+
+To do so, we rename `3.3_Quarto_Bib_WordTemplate.docx` and save as `custom_template.docx`.
+
+We are now ready to customise this template file.
+
+Open `custom_template.docx` and apply your own format to Heading 1. Place the cursor in any Heading 1. In Word, access **Styles tab** and choose **Heading 1** Modify as appropriate. Do not forget to include page numbers!
+
+When you are satisfied with the new template, we will specify this new template in the YAML header at the top as `reference-doc:custom_template.docx`, as shown below.
+
+```         
+number-sections: true
+format:
+  docx:
+    reference-doc: custom_template.docx
+```
+
+## Exercise 1 {.unnumbered}
+
+What does `{.unnumbered}` do?
+
+## Exercise 2
+
+How do you control page breaks in a .qmd document?
+
+\newpage
+
+## Exercise 3
+
+Produce a Word document using the current .qmd file using the apa csl.
+
+Visit <https://quarto.org/docs/authoring/citations.html> and explore more citation options available to use.
+
+## Exercise 4
+
+Use your own template and covert the quarto document in a Word document.
+
+# References {.unnumbered}

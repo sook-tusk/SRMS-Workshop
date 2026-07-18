@@ -1,17 +1,12 @@
 
-Todo
-
-# LEARNING R
+LEARNING R
 - Study how to recode, factorise
-  Don't understand summarise()
-
+- Don't understand summarise()
 - Study tidyverse functions
 
-# ASSESSMENT
+ASSESSMENT
 
-## Assessment 1 prep
-- Find a dataset
+Assessment 1 prep
+- Explore the dataset
 - Find literature
-  So far, UKDS crime dataset searched briefly.
-
 - What motivation?
