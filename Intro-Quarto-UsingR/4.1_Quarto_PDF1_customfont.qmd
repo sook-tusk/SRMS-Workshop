@@ -19,20 +19,19 @@ execute:
   message: false
 ---
 
-
 This document uses:
 
 - Custom font size
 
-- Custom font 
+- Custom font
 
-The YAML header can be configured as shown below. 
+The YAML header can be configured as shown below.
 
-This document uses a custom font size of 12 pt. Remove (or suppress) the `fontsize: 12pt` from the YAML header to use the default font size settings.
+This document uses a custom font size of 12 pt. Remove (or suppress) the \textcolor{Green}{fontsize: 12pt} from the YAML header to use the default font size settings.
 
-We also specify `pdf-engine: xelatex`  as this engine is faster than lualatex for document conversion.
+We also specify **\textcolor{Red}{pdf-engine: xelatex}** as this engine is faster than *lualatex* for document conversion.
 
-```{json}
+```{yaml}
 ---
 fontsize: 12pt
 mainfont: Times New Roman
@@ -40,8 +39,6 @@ sansfont: Times New Roman
 pdf-engine: xelatex
 ---
 ```
-
-*Note:* The YAML options above are treated as another programming language, *jason* in this example, solely to enable \textcolor{DarkRed}{red} syntax highlighting.
 
 \newpage
 
@@ -78,10 +75,11 @@ Present your argument. This can be found in earlier studies [see @Anscombe1973, 
 
 @Kabacoff2015 [p.20] argues that...
 
-
-
 \newpage
 
+## Exercise 1 {.unnumbered}
+Examine the rendered PDF document. 
+- How do you apply font colour to text in a QMD document?
+- How do you control both bold formatting and font colour for text in a QMD document?
+
 # References {.unnumbered}
-
-

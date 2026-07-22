@@ -64,3 +64,5 @@ Figure \@ref(fig:dist) illustrates...
 ```{r dist, echo=FALSE, fig.cap="Histogram of dist"}
 hist(cars$dist)
 ```
+
+

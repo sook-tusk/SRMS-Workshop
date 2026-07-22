@@ -49,12 +49,13 @@ This document uses:
 
 The YAML header can be configured as shown below. 
 
-```{json}
+```{yaml}
 ---
 number-sections: true
 format:
   pdf:
     toc: true
+    toc-title: Contents
     include-in-header: 
       text: |
         \usepackage{dcolumn}
@@ -67,7 +68,7 @@ format:
 ---
 ```
 
-**Technical tips**
+**\textcolor{violet}{Technical tips}**
 Quarto uses KOMA-Script classes (scrartcl by default) and KOMA-Script suggests using scrlayer-scrpage latex package for handling header and footers instead of `fancyhdr` .
 
 See here:

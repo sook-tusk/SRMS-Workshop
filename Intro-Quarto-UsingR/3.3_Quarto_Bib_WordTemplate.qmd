@@ -14,7 +14,6 @@ execute:
 ---
 
 ```{r}
-#| message: false
 library(tidyverse)
 ```
 
@@ -36,7 +35,7 @@ To obtain a bib file, you need to install Better BibTex that bridges **Zotero** 
 
 One can define Citation Style Language (CSL) in YAML header. Visit <https://www.zotero.org/styles> to download an appropriate CSL file.
 
-```         
+```{yaml}        
 bibliography: BibListReferences.bib
 link-citations: true
 csl: apa.csl
@@ -56,7 +55,7 @@ Open `custom_template.docx` and apply your own format to Heading 1. Place the cu
 
 When you are satisfied with the new template, we will specify this new template in the YAML header at the top as `reference-doc:custom_template.docx`, as shown below.
 
-```         
+```{yaml}       
 number-sections: true
 format:
   docx:
