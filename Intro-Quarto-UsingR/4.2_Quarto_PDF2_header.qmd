@@ -77,12 +77,6 @@ See here:
 Also, the official quarto manual: 
 <https://quarto.org/docs/reference/formats/pdf.html>
 
-```{r}
-#| label: "setup"
-#| include: FALSE
-knitr::opts_chunk$set(echo = TRUE,  eval = TRUE)
-```
-
 
 # Prep
 
@@ -92,18 +86,6 @@ knitr::opts_chunk$set(echo = TRUE,  eval = TRUE)
 library(tidyverse)
 ```
 
-# Figure references
-
-See @fig-1.
-
-```{r}
-#| label: fig-1
-#| fig-cap: "Histogram of speed"
-
-# hist(mtcars$wt)
- 
-ggplot(mtcars, aes(x = wt)) +   geom_histogram(binwidth = 0.3)
-```
 
 # Bib file
 

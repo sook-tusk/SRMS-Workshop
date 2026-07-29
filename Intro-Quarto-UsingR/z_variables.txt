@@ -1,0 +1,7 @@
+|     | Variables | Description                    | Measures                     |
+|-----|:----------|:-------------------------------|:-----------------------------|
+| 1   | country   | Country of residence           | 0=Non-UK, 1=UK               |
+| 2   | urban_dv  | Urban or rural area            | 0=Rural, 1=Urban             |
+| 3   | age       | Age                            | 16-65                        |
+| 4   | sex       | Sex of respondent              | 0=Male, 1=Female             |
+| 5   | hlf       | How feel about life as a whole | 0-10, 10 being most positive |

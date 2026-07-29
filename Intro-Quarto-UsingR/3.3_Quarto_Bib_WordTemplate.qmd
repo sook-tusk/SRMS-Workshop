@@ -3,6 +3,9 @@ title: "3.3 Bibliography and template"
 subtitle: "your subtitle"
 number-sections: true
 format: docx
+# format:
+#   docx:
+#     reference-doc: custom_template.docx
 bibliography: BibListReferences.bib
 link-citations: true
 # csl: apa.csl
@@ -35,7 +38,7 @@ To obtain a bib file, you need to install Better BibTex that bridges **Zotero** 
 
 One can define Citation Style Language (CSL) in YAML header. Visit <https://www.zotero.org/styles> to download an appropriate CSL file.
 
-```{yaml}        
+```{yaml}
 bibliography: BibListReferences.bib
 link-citations: true
 csl: apa.csl
@@ -43,11 +46,12 @@ csl: apa.csl
 
 In the YAML header, you can either specify the path to your local CSL file or provide the URL of a style in the Zotero Style Repository. Note that using the latter method requires an internet connection.
 
+
 # Styles and formatting
 
 We use the converted docx document, `3.3_Quarto_Bib_WordTemplate.docx` as a template.
 
-To do so, we rename `3.3_Quarto_Bib_WordTemplate.docx` and save as `custom_template.docx`.
+To do so, we rename `3.3_Quarto_Bib_WordTemplate.docx` and save it as `custom_template.docx`.
 
 We are now ready to customise this template file.
 
@@ -55,12 +59,13 @@ Open `custom_template.docx` and apply your own format to Heading 1. Place the cu
 
 When you are satisfied with the new template, we will specify this new template in the YAML header at the top as `reference-doc:custom_template.docx`, as shown below.
 
-```{yaml}       
+```{yaml}
 number-sections: true
 format:
   docx:
     reference-doc: custom_template.docx
 ```
+
 
 ## Exercise 1 {.unnumbered}
 
@@ -80,6 +85,25 @@ Visit <https://quarto.org/docs/authoring/citations.html> and explore more citati
 
 ## Exercise 4
 
-Use your own template and covert the quarto document in a Word document.
+Use your own template and covert the quarto document to a Word document.
+
+# ADVANCED: table styles in a Word template
+Please see the files titled "4.3", where the table formatting is discussed extensively.
+
+## Editing the font in the table
+
+If you click any area in the table, you will see the Style is set as `Compact.` You can change fonts and paragraph settings in the table by customising `Compact` in Styles. For the border of the table, however, you cannot apply any changes in `Compact.`
+
+## Editing the border in the table
+
+To control the look of the table, you should access `Table Design` in the main menu and click the down arrow to reveal **Modify Table Style…**.
+
+It is important to see the *Style type* is set as `Table`, rather than `paragraph`, and the (style) name is `Table`.
+
+To customise borders, go to:
+
+```         
+Format > Borders and Shading 
+```
 
 # References {.unnumbered}

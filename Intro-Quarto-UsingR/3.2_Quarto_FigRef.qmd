@@ -1,6 +1,8 @@
 ---
-title: "Quarto using reference"
+title: "Quarto using figure references"
 number-sections: true
+format: html
+# format: docx
 execute:
   echo: true
   warning: false
@@ -13,23 +15,55 @@ library(tidyverse)
 
 
 # Figure references
+
+## Directly produce in a qmd file
 See @fig-1.
 ```{r}
 #| label: fig-1
-#| fig-cap: "Histogram of speed"
+#| fig-cap: "Histogram of weight"
 
 # hist(mtcars$wt)
  
-ggplot(mtcars, aes(x = wt)) +   geom_histogram(binwidth = 0.3)
+ggplot(mtcars, aes(x = wt)) + geom_histogram(binwidth = 0.3)
+# ggsave(file = "z_fig-wthist.png")
 ```
 
-## Exercise 1
-Render the document. Fix the errors by adding the figure number and title appropriately.
-```{r}
-#| label: fig-1
-#| fig-cap: Boxplot of mpg
+## Embed a png image
 
-# hist(cars$speed)
- 
+You may use the knitr function `knitr::include_graphics()`. This is particularly useful when your code is very long.
+
+```json
+#| label: fig-3
+#| fig-cap: "Histogram of weight"
+knitr::include_graphics("z_fig-wthist.png")
+```
+```{r}
+#| echo: false
+#| label: fig-2
+#| fig-cap: "Histogram of weight"
+
+knitr::include_graphics("z_fig-wthist.png")
+```
+
+Now, using the code below, control the size of the figure.
+
+```json
+#| out.width: "80%"
+```
+
+```{r}
+#| echo: false
+#| label: fig-3
+#| fig-cap: "Histogram of weight"
+#| out.width: "80%"
+#| out.height: "30%"
+
+knitr::include_graphics("z_fig-wthist.png")
+```
+
+
+## Exercise 1
+Add the figure number and title appropriately for referencing. Render the document and examine the output. 
+```{r}
 ggplot(mtcars, aes(y = mpg)) +   geom_boxplot()
 ```
