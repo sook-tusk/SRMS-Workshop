@@ -38,6 +38,11 @@ Restart RStudio and convert an Rmd file again.
 See the full discussion here:
 <https://github.com/rstudio/rstudio/issues/11552>
 
+# Figure and table referencing during Qmd to Word conversion
+During the QMD-to-Word conversion, Quarto treats figure and table captions in the same way, with both being handled as image captions. As a result, some manual editing is required after conversion. This is currently one of the limitations of the conversion process, although further improvements may be introduced in future developments.
+
+If full automation is desired, consider using R Markdown instead of Quarto, as R Markdown offers greater support for customising Word templates and therefore enables more comprehensive automation.
+
 # Other errors  
 Remove emoticons or special characters not allowed in particular options.
 
