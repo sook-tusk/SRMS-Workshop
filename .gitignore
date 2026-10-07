@@ -2,7 +2,7 @@
 /.quarto/
 **/*.quarto_ipynb
 
-# Ignore .DS_Store files
+# Ignore .DS_Store files (for Mac users)
 .DS_Store
 
 # Additional
