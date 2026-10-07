@@ -2,8 +2,6 @@
 
 In VS Code, we will use Command Palette extensively as it allows us to quickly type commands and execute procedures. To trigger the command palette, press **F1** or **Ctrl+shift+p** on Windows PC or **Cmd+shift+p** on Mac.
 
-# Steps
-
 ## 1. Install git.
 
 **Check if already installed** In MacOS, git is pre-installed.
