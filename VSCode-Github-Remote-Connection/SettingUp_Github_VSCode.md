@@ -37,16 +37,17 @@ If you are interested in developing a website, you could select the *Website Pro
 > [!TIP]
 > If you are unsure about the procedure, create a test project folder for now and experiment with it.
 
-Before we connect VSCode to Github, we will add **.DS_Store** in the .gitignore file. This ensures that **.DS_Store** files are not tracked and will not appear in the repository.  
-
-> [!TIP]
-> Please note that *.DS_Store* is a file that stores custom attributes of its containing folders related to Mac OS.
+## 3b. (Mac users only) Update your .gitignore file
+If you are Mac users, there is one more step we should take. Before we connect VSCode to Github, we will add **.DS_Store** in the .gitignore file. This ensures that **.DS_Store** files are not tracked and will not appear in the repository.  
 
 ```r
 # Ignore .DS_Store files (for Mac users)
 .DS_Store
 ```
 An example .gitignore file is provided [here](/.gitignore). 
+
+> [!TIP]
+> Please note that *.DS_Store* is a hidden file that stores custom attributes of its containing folders related to Mac OS. 
 
 ## 4. Now, connect to GitHub
 
@@ -88,7 +89,7 @@ Voila! You have just shared your project online by remotely connecting VSCode to
 
 # Troubleshooting
 
-## Deal with DS_Store
+## Deal with DS_Store files
 During the process of committing changes (and push) in VSCode to github, you'll notice that DS_Store file is created somehow and you wish to remove it. One can address this issue in three steps as shown below.
 
 ### 1) First, add this in the .gitignore file
@@ -98,7 +99,7 @@ During the process of committing changes (and push) in VSCode to github, you'll 
 ```
 Skip this step if you have already done so.
 
-### 2)  in Terminal, type:
+### 2) In Terminal, type:
 
 ```zsh
 git rm --cached .DS_Store
