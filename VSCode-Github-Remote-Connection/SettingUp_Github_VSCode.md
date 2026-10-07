@@ -37,6 +37,17 @@ If you are interested in developing a website, you could select the *Website Pro
 > [!TIP]
 > If you are unsure about the procedure, create a test project folder for now and experiment with it.
 
+Before we connect VSCode to Github, we will add **.DS_Store** in the .gitignore file. This ensures that **.DS_Store** files are not tracked and will not appear in the repository.  
+
+> [!TIP]
+> Please note that *.DS_Store* is a file that stores custom attributes of its containing folders related to Mac OS.
+
+```r
+# Ignore .DS_Store files (for Mac users)
+.DS_Store
+```
+An example .gitignore file is provided [here](/.gitignore). 
+
 ## 4. Now, connect to GitHub
 
 Trigger command palette and type:
@@ -78,15 +89,14 @@ Voila! You have just shared your project online by remotely connecting VSCode to
 # Troubleshooting
 
 ## Deal with DS_Store
-During the process of committing changes (and push) in VSCode to github, you'll notice that DS_Store file is created and you wish to remove it. One can address this issue in three steps as shown below.
+During the process of committing changes (and push) in VSCode to github, you'll notice that DS_Store file is created somehow and you wish to remove it. One can address this issue in three steps as shown below.
 
 ### 1) First, add this in the .gitignore file
-
 ```r
 # Ignore .DS_Store files
 .DS_Store
 ```
-An example .gitignore file is provided [here](/.gitignore).
+Skip this step if you have already done so.
 
 ### 2)  in Terminal, type:
 
@@ -128,4 +138,7 @@ Create several private repositories and experiment with Github and VSCode (You c
 # Resources 
 https://stackoverflow.com/questions/46877667/how-to-add-a-new-project-to-github-using-vs-code
 
+https://stackoverflow.com/questions/54723508/whats-the-ds-store-file-that-keeps-changing-in-my-visual-studio-project-on-mac 
+
 https://stackoverflow.com/questions/69005605/ds-store-is-showing-up-as-a-pending-change-in-my-git-repo-despite-being-untrack
+
