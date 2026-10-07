@@ -84,7 +84,7 @@ During the process of committing changes (and push) in VSCode to github, you'll 
 # Ignore .DS_Store files
 .DS_Store
 ```
-An example .gitignore file is provided [here](VSCode-Github-Remote-Connection/.gitignore).
+An example .gitignore file is provided [here](/.gitignore).
 
 ### 2)  in Terminal, type:
 
