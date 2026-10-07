@@ -89,7 +89,7 @@ Voila! You have just shared your project online by remotely connecting VSCode to
 
 # Troubleshooting
 
-## Deal with DS_Store files
+## Deal with DS_Store files (Mac users)
 During the process of committing changes (and push) in VSCode to github, you'll notice that DS_Store file is created somehow and you wish to remove it. One can address this issue in three steps as shown below.
 
 ### 1) First, add this in the .gitignore file
