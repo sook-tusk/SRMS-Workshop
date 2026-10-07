@@ -129,5 +129,3 @@ Create several private repositories and experiment with Github and VSCode (You c
 https://stackoverflow.com/questions/46877667/how-to-add-a-new-project-to-github-using-vs-code
 
 https://stackoverflow.com/questions/69005605/ds-store-is-showing-up-as-a-pending-change-in-my-git-repo-despite-being-untrack
-
-https://www.slingacademy.com/article/git-what-is-ds_store-and-should-you-ignore-it/
