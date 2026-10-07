@@ -1,6 +1,6 @@
 # Use VSCode to publish your project in GitHub
 
-In VS Code, we will use Command Palette extensively as it allows us to quickly type commands and execute procedures. To trigger the command palette, press **F1** or **Ctrl+shift+p** on Windows PC or **Cmd+shift+p** on Mac.
+In VS Code, we will use Command Palette extensively as it allows us to quickly type commands and execute procedures. To trigger the command palette, press **F1** or **Ctrl+shift+p** on Windows PC or **Cmd+shift+p** on Mac. We will implement the procedures in five steps.
 
 ## 1. Install git.
 
@@ -110,16 +110,17 @@ This ensures that **.DS_Store** files are no longer tracked and are removed from
 ## Unresponsiveness
 -   An unstable internet connection may cause errors when you push the changes. Try again once the connection is stable.
 
-# EXTRA: Additional lines in the gitignore file
-Depending on your aims, you may also include files created in RStudio to the .gitignore file. For instance:
+# EXTRA
+You can also remove unnecessary files, including the *yml* file, as they are intended for a website. The QMD file can be treated as an MD file or simply be removed. These changes can be reflected in your repository (see step 5). 
+
+Depending on your aims, you may also include files created in RStudio to the *.gitignore* file. For instance:
 ```
 .Rproj.user
 .Rhistory
 .Ruserdata
 ```
-
+ 
 # Exercise
-
 Create several private repositories and experiment with Github and VSCode (You can skip steps 1-2 here). When you feel confident, share your project as a public repository! 
 
 # Resources 
