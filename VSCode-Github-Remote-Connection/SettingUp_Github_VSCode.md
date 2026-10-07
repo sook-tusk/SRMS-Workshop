@@ -45,13 +45,13 @@ Publish to GitHub
 
 If you are not already signed in, a pop-up window will appear asking you to grant permission. Click *Allow* and enter your credentials to authorise the connection between GitHub and VS Code.
 
-From a browser, VSCode tab opens with a window asking for an input (if you are already signed in, you do not need to leave VSCode for this step). Select the appropriate option between the two types of repository.
+From your browser, a new VSCode tab opens with a window asking you to select an option (if you are already signed in, you do not need to leave VSCode for this step). Select the appropriate option from the two repository types:
 ```json
-Publish to GitHub private repository youraccountname/projectname
-Publish to GitHub public repository youraccountname/projectname
+Publish to GitHub private repository accountname/projectname
+Publish to GitHub public repository accountname/projectname
 ```
-
-Github confirms the authentication with VSCode and starts creating a repository.
+In this exercise, we will choose the first option, *a private repository*.
+Once the option is selected, GitHub authenticates with VS Code and starts creating the repository.
 
 ## 5. Upload(Commit and push) your project in VSCode to Github:
 
@@ -92,11 +92,11 @@ An example .gitignore file is provided [here](/.gitignore).
 git rm --cached .DS_Store
 ```
 
-For example, for my project, *2026-10-07_Test*, you'll expect to see this output in Terminal:
+For example, for a project, *2026-10-07_Test*, you'll expect to see this output in Terminal:
 ```zsh
-(base) sook@Mac 2026-10-07_Test % git rm --cached .DS_Store
+(base) yourname@Mac 2026-10-07_Test % git rm --cached .DS_Store
 rm '.DS_Store'
-(base) sook@Mac 2026-10-07_Test % 
+(base) yourname@Mac 2026-10-07_Test % 
 ```
 This removes the *.DS_Store file* from your most recent commit.
 
