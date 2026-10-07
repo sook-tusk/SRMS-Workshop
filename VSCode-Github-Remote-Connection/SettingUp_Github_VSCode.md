@@ -34,7 +34,10 @@ Then, select:
 ```json
 Default Project
 ``` 
-If you are interested in developing a webiste, you could select the *Website Project* option.
+If you are interested in developing a website, you could select the *Website Project* option. When prompted to choose a directory, select an appropriate location and enter a title for the project. 
+
+> [!TIP]
+> If you are unsure about the procedure, create a test project folder for now and experiment with it.
 
 ## 4. Now, connect to GitHub
 
@@ -69,9 +72,10 @@ In the Commit message window, add a brief description of your changes before cli
 
 To verify that your changes have been uploaded to your GitHub repository, refresh the page in your browser.
 
-*Note: If asked for Username, and password for '<https://github.com/>', type as appropriate*
-
 Voila! You have just shared your project online by remotely connecting VSCode to Github! Well-done!
+
+> [!TIP]
+> If prompted for a username, and password for '<https://github.com/>', enter them as appropriate*
 
 # Troubleshooting
 
