@@ -111,7 +111,9 @@ This ensures that **.DS_Store** files are no longer tracked and are removed from
 -   An unstable internet connection may cause errors when you push the changes. Try again once the connection is stable.
 
 # EXTRA
-You can remove unnecessary files, including the *yml* file, as they are intended for a website. The QMD file can be treated as an MD file or simply be removed. These changes can be reflected in your repository (see step 5). 
+
+> [!TIP]
+> You can remove unnecessary files, including the *yml* file, as they are intended for a website. The QMD file can be treated as an MD file or simply be removed. These changes can be reflected in your repository (see step 5). 
 
 Depending on your aims, you may also include files created in RStudio to the *.gitignore* file. For instance:
 ```
