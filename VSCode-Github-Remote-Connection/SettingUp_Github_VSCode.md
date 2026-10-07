@@ -34,7 +34,7 @@ Then, select:
 ```json
 Default Project
 ``` 
-If you are interested in developing a webiste, you could select *Website Project*.
+If you are interested in developing a webiste, you could select the *Website Project* option.
 
 ## 4. Now, connect to GitHub
 
@@ -65,7 +65,7 @@ Hover over the modified files to display a menu of symbols, including + symbol. 
 
 If you select all the changed files, you will notice that no files remain under the Changes area.
 
-In the Commit message window, add a brief description of your changes before clicking Commit. Once you click Commit, the Commit button will be updated to  Sync Changes. Click **Sync Changes** immediately after pressing the **Commit** button (The corresponding procedure of Sync changes is called Push in RStudio).
+In the Commit message window, add a brief description of your changes before clicking Commit. Once you click Commit, the Commit button will be updated to  Sync Changes. Click **Sync Changes** immediately after pressing the **Commit** button (The corresponding procedure for *Sync changes* is called *Push* in RStudio).
 
 To verify that your changes have been uploaded to your GitHub repository, refresh the page in your browser.
 
@@ -78,31 +78,32 @@ Voila! You have just shared your project online by remotely connecting VSCode to
 ## Deal with DS_Store
 During the process of committing changes (and push) in VSCode to github, you'll notice that DS_Store file is created and you wish to remove it. One can address this issue in three steps as shown below.
 
-### 1. First, add this in the .gitignore file
+### 1) First, add this in the .gitignore file
 
 ```r
 # Ignore .DS_Store files
 .DS_Store
 ```
+An example .gitignore file is provided [here](VSCode-Github-Remote-Connection/.gitignore).
 
-### 2.  in Terminal, type:
+### 2)  in Terminal, type:
 
 ```zsh
 git rm --cached .DS_Store
 ```
 
-For example, for my project, 2026-10-07_Test, you'll expect to see this output in Terminal:
+For example, for my project, *2026-10-07_Test*, you'll expect to see this output in Terminal:
 ```zsh
 (base) sook@Mac 2026-10-07_Test % git rm --cached .DS_Store
 rm '.DS_Store'
 (base) sook@Mac 2026-10-07_Test % 
 ```
-This removes .DS_Store files from your most recent commit.
+This removes the *.DS_Store file* from your most recent commit.
 
-### 3. Then, commit changes
+### 3) Then, commit changes
 Follow the instructions in step 5, which illustrate how to stage, commit and sync changes.
 
-This ensures that **.DS_Store** files are no longer tracked and are removed from the repository. Well-done. 
+This ensures that **.DS_Store** files are no longer tracked and are removed from the repository. 
 
 ## Unresponsiveness
 -   An unstable internet connection may cause errors when you push the changes. Try again once the connection is stable.
