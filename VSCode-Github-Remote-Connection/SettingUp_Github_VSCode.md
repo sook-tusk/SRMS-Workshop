@@ -72,7 +72,7 @@ To verify that your changes have been uploaded to your GitHub repository, refres
 
 Voila! You have just shared your project online by remotely connecting VSCode to Github! Well-done!
 
-> [!TIP]
+> [!NOTE]
 > If prompted for a username, and password for '<https://github.com/>', enter them as appropriate*
 
 # Troubleshooting
