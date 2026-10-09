@@ -18,6 +18,6 @@ The content is designed for readers with limited computing experience and aims t
 
 For those who are motivated to share their project files online and showcase their work using RStudio, visit [RStudio-Github-Remote Connection](RStudio-Github-Remote-Connection/SettingUp_Github_RStudio.md). 
 
-If you are familiar with VS Code, you may find [VSCode-Github-Remote-Connection/](VSCode-Github-Remote-Connection/SettingUp_Github_VSCode.md) useful.
+If you are familiar with VS Code, you may find [VSCode-Github-Remote-Connection](VSCode-Github-Remote-Connection/SettingUp_Github_VSCode.md) useful.
 
 Please feel free to share any feedback or suggestions you may have about the page by clicking [here](https://forms.gle/6NYAmEGQks48mizt9). Your comments will be greatly appreciated and will help to improve the page. Thank you for your time and valuable feedback.
