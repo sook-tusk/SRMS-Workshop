@@ -1,4 +1,9 @@
+------------------------------------------------------------------------
+
+editor_options: markdown: wrap: 72 ---
+
 # Use VSCode to publish your project in GitHub
+There are several ways to connect VS Code to GitHub. This tutorial uses the **Publish to GitHub** command, introduced in VS Code version 1.73 in 2022, to automate the creation of a GitHub repository directly from VS Code. This workflow streamlines the process compared with the traditional **Git: Clone** approach, which requires an existing GitHub repository and several preliminary steps before the project can be set up locally.
 
 In VS Code, we will use Command Palette extensively as it allows us to quickly type commands and execute procedures. To trigger the command palette, press **F1** or **Ctrl+shift+p** on Windows PC or **Cmd+shift+p** on Mac. We will implement the procedures in five steps.
 
@@ -23,48 +28,54 @@ Verify the installation by using Terminal. Type "git version" in Terminal.
 Visit <https://github.com/> and click Sign Up. Then follow the on-screen instructions and sign in to your account.
 
 ## 3. Create a quarto project in VSCode
-In VSCode, create a new project.
-Trigger VS Code command-palette and type:
-```json
-Quarto: Create Project
-``` 
-Then, select:
-```json
-Default Project
-``` 
-If you are interested in developing a website, you could select the *Website Project* option. When prompted to choose a directory, select an appropriate location and enter a title for the project. 
 
-> [!TIP]
-> If you are unsure about the procedure, create a test project folder for now and experiment with it.
+In VSCode, create a new project. Trigger VS Code command-palette and type:
+
+``` json
+Quarto: Create Project
+```
+
+Then, select:
+
+``` json
+Default Project
+```
+
+If you are interested in developing a website, you could select the *Website Project* option. When prompted to choose a directory, select an appropriate location and enter a title for the project.
+
+> [!TIP] If you are unsure about the procedure, create a test project folder for now and experiment with it.
 
 ## 3b. (Mac users only) Update your .gitignore file
-If you are Mac users, there is one more step we should take. Before we connect VSCode to Github, we will add **.DS_Store** in the .gitignore file. This ensures that **.DS_Store** files are not tracked and will not appear in the repository.  
 
-```r
+If you are Mac users, there is one more step we should take. Before we connect VSCode to Github, we will add **.DS_Store** in the .gitignore file. This ensures that **.DS_Store** files are not tracked and will not appear in the repository.
+
+``` r
 # Ignore .DS_Store files (for Mac users)
 .DS_Store
 ```
-An example .gitignore file is provided [here](/.gitignore). 
 
-> [!TIP]
-> Please note that *.DS_Store* is a hidden file that stores custom attributes of its containing folders related to Mac OS. 
+An example .gitignore file is provided [here](/.gitignore).
+
+> [!TIP] Please note that *.DS_Store* is a hidden file that stores custom attributes of its containing folders related to Mac OS.
 
 ## 4. Now, connect to GitHub
 
 Trigger command palette and type:
-```json
+
+``` json
 Publish to GitHub
 ```
 
 If you are not already signed in, a pop-up window will appear asking you to grant permission. Click *Allow* and enter your credentials to authorise the connection between GitHub and VS Code.
 
 From your browser, a new VSCode tab opens with a window asking you to select an option (if you are already signed in, you do not need to leave VSCode for this step). Select the appropriate option from the two repository types:
-```json
+
+``` json
 Publish to GitHub private repository accountname/projectname
 Publish to GitHub public repository accountname/projectname
 ```
-In this exercise, we will choose the first option, *a private repository*.
-Once the option is selected, GitHub authenticates with VS Code and starts creating the repository.
+
+In this exercise, we will choose the first option, *a private repository*. Once the option is selected, GitHub authenticates with VS Code and starts creating the repository.
 
 ## 5. Upload(Commit and push) your project in VSCode to Github:
 
@@ -78,68 +89,113 @@ Hover over the modified files to display a menu of symbols, including + symbol. 
 
 If you select all the changed files, you will notice that no files remain under the Changes area.
 
-In the Commit message window, add a brief description of your changes before clicking Commit. Once you click Commit, the Commit button will be updated to  Sync Changes. Click **Sync Changes** immediately after pressing the **Commit** button (The corresponding procedure for *Sync changes* is called *Push* in RStudio).
+In the Commit message window, add a brief description of your changes before clicking Commit. Once you click Commit, the Commit button will be updated to Sync Changes. Click **Sync Changes** immediately after pressing the **Commit** button (The corresponding procedure for *Sync changes* is called *Push* in RStudio).
 
 To verify that your changes have been uploaded to your GitHub repository, refresh the page in your browser.
 
 Voila! You have just shared your project online by remotely connecting VSCode to Github! Well-done!
 
-> [!NOTE]
-> If prompted for a username, and password for '<https://github.com/>', enter them as appropriate*
+> [!NOTE] If prompted for a username, and password for '<https://github.com/>', enter them as appropriate\*
 
 # Troubleshooting
 
+## Authentification by generating SSH key
+Step 4 uses the GitHub Extension for authentication. If an error occurs, an alternative authentication method can be used. One such method is **SSH key authentication**, which uses cryptographic keys to establish a secure connection. SSH is particularly recommended for contributors who frequently access `private` repositories, as it provides a smooth and uninterrupted authentication process. Once the SSH key has been configured, users can connect to GitHub and push changes without having to enter their username and password each time.
+
+> [!NOTE] SSH authentication uses a key pair: a private key stored locally on your machine and a public key added to your GitHub account. The command, `-C` denotes adding a comment.
+
+### Generate SSH key
+In the VS Code terminal, Run this command:
+
+``` json
+ssh-keygen -t ed25519 -C "youremail@gmail.com"
+```
+
+Once entered, you'll be prompted to confirm the location to save the key.
+
+``` zsh
+(base) yourname@Mac 2026-10-07_Test % ssh-keygen -t ed25519 -C "youremail@gmail.com"
+
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/Users/yourname/.ssh/id_ed25519):
+```
+
+Press Enter to accept the default location. On Windows, the default location is *C:*\Users\yourname/.ssh/id_ed25519.
+
+### Paste the public SSH key to Github settings 
+Now, we need to paste this (public) SSH key to the Github settings page. Go to the page <https://github.com/settings/keys> and click on **New SSH key**. Choose a name for your key (e.g. your device name, 2026-sk-mac) and paste your public SSH key. Finally click on **Add SSH key**. Apply and Click OK.
+
+To verify the settings, open the terminal in VSCode and enter:
+
+> ssh -T git\@github.com
+
+*Hi yourusername! You've successfully authenticated, but GitHub does not provide shell access.*
+
+If this is printed, it's correctly configured.
+
 ## Deal with DS_Store files (Mac users)
+
 During the process of committing changes (and push) in VSCode to github, you'll notice that DS_Store file is created somehow and you wish to remove it. One can address this issue in three steps as shown below.
 
 ### 1) First, add this in the .gitignore file
-```r
+
+``` r
 # Ignore .DS_Store files
 .DS_Store
 ```
+
 Skip this step if you have already done so.
 
 ### 2) In Terminal, type:
 
-```zsh
+``` zsh
 git rm --cached .DS_Store
 ```
 
 For example, for a project, *2026-10-07_Test*, you'll expect to see this output in Terminal:
-```zsh
+
+``` zsh
 (base) yourname@Mac 2026-10-07_Test % git rm --cached .DS_Store
 rm '.DS_Store'
 (base) yourname@Mac 2026-10-07_Test % 
 ```
+
 This removes the *.DS_Store file* from your most recent commit.
 
 ### 3) Then, commit changes
+
 Follow the instructions in step 5, which illustrate how to stage, commit and sync changes.
 
-This ensures that **.DS_Store** files are no longer tracked and are removed from the repository. 
+This ensures that **.DS_Store** files are no longer tracked and are removed from the repository.
 
 ## Unresponsiveness
--   An unstable internet connection may cause errors when you push the changes. Try again once the connection is stable.
+
+- An unstable internet connection may cause errors when you push the changes. Try again once the connection is stable.
 
 # EXTRA
 
-> [!TIP]
-> You can remove unnecessary files, including the *yml* file, as they are intended for a website. The QMD file can be treated as an MD file or simply be removed. These changes can be reflected in your repository (see step 5). 
+> [!TIP] You can remove unnecessary files, including the *yml* file, as they are intended for a website. The QMD file can be treated as an MD file or simply be removed. These changes can be reflected in your repository (see step 5).
 
 Depending on your aims, you may also include files created in RStudio to the *.gitignore* file. For instance:
-```
+
+```         
 .Rproj.user
 .Rhistory
 .Ruserdata
 ```
- 
+
 # Exercise
-Create several private repositories and experiment with Github and VSCode (You can skip steps 1-2 here). When you feel confident, share your project as a public repository! 
 
-# Resources 
-https://stackoverflow.com/questions/46877667/how-to-add-a-new-project-to-github-using-vs-code
+Create several private repositories and experiment with Github and VSCode (You can skip steps 1-2 here). Add sub-folders and files in the project and modify them before pushing the changes. When you feel confident, share your project as a public repository!
 
-https://stackoverflow.com/questions/54723508/whats-the-ds-store-file-that-keeps-changing-in-my-visual-studio-project-on-mac 
+# Resources
 
-https://stackoverflow.com/questions/69005605/ds-store-is-showing-up-as-a-pending-change-in-my-git-repo-despite-being-untrack
+<https://stackoverflow.com/questions/46877667/how-to-add-a-new-project-to-github-using-vs-code>
 
+<https://stackoverflow.com/questions/54723508/whats-the-ds-store-file-that-keeps-changing-in-my-visual-studio-project-on-mac>
+
+<https://stackoverflow.com/questions/69005605/ds-store-is-showing-up-as-a-pending-change-in-my-git-repo-despite-being-untrack>
+
+<https://tms-outsource.com/blog/posts/how-to-connect-to-a-github-repository-from-vscode/> 
+
+<!-- <https://tms-outsource.com/blog/posts/how-to-add-ssh-key-to-github/>  -->

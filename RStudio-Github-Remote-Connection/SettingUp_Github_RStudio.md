@@ -40,16 +40,16 @@ a.  Tick the box for **Enable version control interface for RStudio projects**
 
 b.  Set the git path settings in RStudio:
 
--   Set Git executable (Windows): C:/Program Files/Git/bin/git.exe
--   Set Git executable (Mac): /usr/bin/git
+- Set Git executable (Windows): C:/Program Files/Git/bin/git.exe
+- Set Git executable (Mac): /usr/bin/git
 
 c.  SSH key: Need it for encryption purposes. It allows you to connect to GitHub without having to provide your username and password each time you push to GitHub. <https://frbcesab.github.io/rsetup/chapters/github-ssh.html>
 
-Click on Create SSH Key, select ED25519 and then click on Create (you can omit the passphrase). This new SSH keys pair has been stored in \~/.ssh/. Click on **View public key** and copy it.
+Click on Create SSH Key, select ED25519 and then click on Create (you can omit the passphrase). This new SSH keys pair has been stored in `Users/yourname/.ssh/id_ed25519`. Click on **View public key** and copy it.
 
 ## 4. We need to paste this SSH key to github page.
 
-Go to the page <https://github.com/settings/keys> and click on New SSH key Choose a name for your key (e.g. your laptop name, 2024-sk-mac) and paste your public key. Finally click on Add SSH key
+Go to the page <https://github.com/settings/keys> and click on New SSH key Choose a name for your key (e.g. your laptop name, 2024-sk-mac) and paste your public key. Finally click on **Add SSH key**.
 
 Apply and Click OK. Ensure to restart RStudio.
 
@@ -113,9 +113,9 @@ Voila! You have just shared your project online by remotely connecting RStudio t
 
 # Troubleshoot
 
--   Unstable Internet connection could cause errors when you push the changes. Try again when the connection becomes stable.
+- Unstable Internet connection could cause errors when you push the changes. Try again when the connection becomes stable.
 
--   Is the Terminal tab not visible in RStudio? Press *Ctrl(Cmd)+Shift+P* to bring up Command Palette \> Type **Show Terminal** \> Press Enter. *Note the option changes from Off to On with Enter key.* Restart RStudio and you'll see the Terminal tab.
+- Is the Terminal tab not visible in RStudio? Press *Ctrl(Cmd)+Shift+P* to bring up Command Palette \> Type **Show Terminal** \> Press Enter. *Note the option changes from Off to On with Enter key.* Restart RStudio and you'll see the Terminal tab.
 
 # Exercise
 
