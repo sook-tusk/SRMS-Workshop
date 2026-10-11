@@ -101,7 +101,7 @@ Step 4 uses the GitHub Extension for authentication. If an error occurs, an alte
 > [!NOTE] SSH authentication uses a key pair: a private key stored locally on your machine and a public key added to your GitHub account. The command, `-C` denotes adding a comment.
 
 ### Generate SSH key
-In the VS Code terminal, Run this command:
+In the VS Code terminal, run this command:
 
 ``` json
 ssh-keygen -t ed25519 -C "youremail@gmail.com"
