@@ -1,7 +1,3 @@
-------------------------------------------------------------------------
-
-editor_options: markdown: wrap: 72 ---
-
 # Use VSCode to publish your project in GitHub
 There are several ways to connect VS Code to GitHub. This tutorial uses the **Publish to GitHub** command, introduced in VS Code version 1.73 in 2022, to automate the creation of a GitHub repository directly from VS Code. This workflow streamlines the process compared with the traditional **Git: Clone** approach, which requires an existing GitHub repository and several preliminary steps before the project can be set up locally.
 
