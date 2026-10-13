@@ -10,7 +10,7 @@ tinytex::install_tinytex()
 ```
 If this does not work, uninstall tinytex first.
 ```{r}
-uninstall_packages("tinytex")
+remove.packages("tinytex")
 ```
 
 # Incrementally test
