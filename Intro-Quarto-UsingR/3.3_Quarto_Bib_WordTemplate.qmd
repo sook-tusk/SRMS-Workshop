@@ -110,8 +110,11 @@ During the QMD-to-Word conversion, Quarto treats figure and table captions in th
 
 If full automation is desired, consider using R Markdown instead of Quarto, as R Markdown offers greater support for customising Word templates and therefore enables more comprehensive automation.
 
-# References {.unnumbered}
+# Pandoc default template
 To create a Pandoc default template populated with the most frequently used formatting options:
 <https://quarto.org/docs/output-formats/ms-word-templates.html>
 
 > Use Terminal and run the command shown in the instructions above.
+
+# References {.unnumbered}
+
