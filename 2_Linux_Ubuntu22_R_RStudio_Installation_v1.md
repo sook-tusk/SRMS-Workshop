@@ -1,5 +1,7 @@
 
 # Installing R and RStudio for Linux users
+If Linux is your computing environment, please check whether
+your device is built on an arm-based CPU (often found in Chromebook), which is designed primarily for mobile environment, rather than general-purpose computing. Recent Linux versions running on Intel or AMD CPU can handle R and RStudio.
 
 ## How to enter password
 Type your password when you are prompted to enter. It won't print anything as you type but it works.
