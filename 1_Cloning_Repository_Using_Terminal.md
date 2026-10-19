@@ -32,5 +32,5 @@ $ git clone https://github.com/sook-tusk/SRMS-Workshop.git
 ```
 
 > [!TIP] 
-Please note that `cd` stands for "change directory".
+> Please note that `cd` stands for "change directory".
 
