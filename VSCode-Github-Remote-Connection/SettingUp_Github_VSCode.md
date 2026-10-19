@@ -40,7 +40,7 @@ Default Project
 If you are interested in developing a website, you could select the *Website Project* option. When prompted to choose a directory, select an appropriate location and enter a title for the project.
 
 > [!TIP] 
-> If you are unsure about the procedure, create a test project folder for now and experiment with it.
+If you are unsure about the procedure, create a test project folder for now and experiment with it.
 
 ## 3b. (Mac users only) Update your .gitignore file
 
@@ -174,7 +174,8 @@ This ensures that **.DS_Store** files are no longer tracked and are removed from
 
 # EXTRA
 
-> [!TIP] You can remove unnecessary files, including the *yml* file, as they are intended for a website. The QMD file can be treated as an MD file or simply be removed. These changes can be reflected in your repository (see step 5).
+> [!TIP] 
+You can remove unnecessary files, including the *yml* file, as they are intended for a website. The QMD file can be treated as an MD file or simply be removed. These changes can be reflected in your repository (see step 5).
 
 Depending on your aims, you may also include files created in RStudio to the *.gitignore* file. For instance:
 
