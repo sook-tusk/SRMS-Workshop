@@ -32,7 +32,7 @@ Alternatively, you could clone the Repository in RStudio. Follow the steps below
 2) Click **New Project...** (located at the top-right corner)
 3) Select **Version Control**
 4) Then, select **Git**
-5) You'll see two blank fields(boxes). Pay attention to the first field, *Repository URL*.
+5) You'll see two blank fields(boxes). Pay attention to the first field, **Repository URL**.
 
 Paste the GitHub repository URL, *https://github.com/sook-tusk/SRMS-Workshop*, into the Repository URL field.
 
