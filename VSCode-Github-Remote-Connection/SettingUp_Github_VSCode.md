@@ -101,7 +101,8 @@ Voila! You have just shared your project online by remotely connecting VSCode to
 ## Authentification by generating SSH key
 Step 4 uses the GitHub Extension for authentication. If an error occurs, an alternative authentication method can be used. One such method is **SSH key authentication**, which uses cryptographic keys to establish a secure connection. SSH is particularly recommended for contributors who frequently access `private` repositories, as it provides a smooth and uninterrupted authentication process. Once the SSH key has been configured, users can connect to GitHub and push changes without having to enter their username and password each time.
 
-> [!NOTE] SSH authentication uses a key pair: a private key stored locally on your machine and a public key added to your GitHub account. The command, `-C` denotes adding a comment.
+> [!NOTE] 
+SSH authentication uses a key pair: a private key stored locally on your machine and a public key added to your GitHub account. The command, `-C` denotes adding a comment.
 
 ### Generate SSH key
 In the VS Code terminal, run this command:
