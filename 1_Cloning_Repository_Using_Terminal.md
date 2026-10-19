@@ -31,5 +31,6 @@ S@DESKTOP-H3PQDN5 MINGW64 /w
 $ git clone https://github.com/sook-tusk/SRMS-Workshop.git
 ```
 
-> [!TIP] Please note that `cd` stands for "change directory".
+> [!TIP] 
+Please note that `cd` stands for "change directory".
 
