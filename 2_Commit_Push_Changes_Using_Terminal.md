@@ -37,7 +37,7 @@ W:\path\SRMS-Workshop>git push
 
 > [!TIP] 
 > If your Terminal is unresponsive, open a new terminal to execute the commands.
-> The command, `-m` denotes adding a commit _m_essage.
+> The command, `-m` denotes adding a commit *m*essage.
 
 # Reference 
 <https://user-guidance.analytical-platform.service.justice.gov.uk/github/command-line-git.html#make-a-copy-of-a-github-project-39-cloning-39>
