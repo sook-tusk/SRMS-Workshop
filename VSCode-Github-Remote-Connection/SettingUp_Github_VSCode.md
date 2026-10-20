@@ -8,7 +8,7 @@ We will also use **Command Palette** extensively as it allows us to quickly type
 
 > [!tip] 
 > Quarto is available to download here: <https://quarto.org/docs/get-started/>.
-
+>
 > Also, to ensure that VS Code recognises QMD syntax and supports Visual Editor mode, and other Quarto functionalities, install the extension, `Quarto` in VS Code.
 
 ## 1. Install git.
