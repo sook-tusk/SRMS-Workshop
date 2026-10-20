@@ -3,7 +3,10 @@ There are several ways to connect VS Code to GitHub. This tutorial uses the **Pu
 
 We will also use **Command Palette** extensively as it allows us to quickly type commands and execute tasks in VS Code. To *trigger the command palette*, press **F1** or **Ctrl+shift+p** on Windows PC or **Cmd+shift+p** on Mac. We will implement the procedures in five steps.
 
-> [! note]
+> [! TIP]
+To ensure that VS Code recognises QMD syntax and supports Visual Editor mode and other Quarto functionalities, install the extension, `Quarto`. 
+
+> [! tip]
 To ensure that VS Code recognises QMD syntax and supports Visual Editor mode and other Quarto functionalities, install the extension, `Quarto`. 
 
 ## 1. Install git.
