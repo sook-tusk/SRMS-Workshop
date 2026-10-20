@@ -1,7 +1,6 @@
 
----
-title: "Commit and push changes using Terminal"
----
+Commit and push changes using Terminal
+======================================
 
 # Follow the steps below:
 1. Launch RStudio (or VS Code)
