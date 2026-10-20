@@ -5,6 +5,8 @@ We will also use **Command Palette** extensively as it allows us to quickly type
 
 <!-- lowercase ok, space not allowed after ! -->
 > [!tip]
+Quarto is available to load [here] <https://quarto.org/docs/get-started/>.
+
 To ensure that VS Code recognises QMD syntax and supports Visual Editor mode, and other Quarto functionalities, install the extension, `Quarto` in VS Code. 
 
 ## 1. Install git.
