@@ -47,7 +47,8 @@ Default Project
 
 If you are interested in developing a website, you could select the *Website Project* option. When prompted to choose a directory, select an appropriate location and enter a title for the project.
 
-> [!TIP] If you are unsure about the procedure, create a test project folder for now and experiment with it.
+> [!TIP] 
+If you are unsure about the procedure, create a test project folder for now and experiment with it.
 
 ## 3b. (Mac users only) Update your .gitignore file
 
@@ -60,7 +61,8 @@ If you are Mac users, there is one more step we should take. Before we connect V
 
 An example .gitignore file is provided [here](/.gitignore).
 
-> [!TIP] Please note that *.DS_Store* is a hidden file that stores custom attributes of its containing folders related to Mac OS.
+> [!TIP] 
+Please note that *.DS_Store* is a hidden file that stores custom attributes of its containing folders related to Mac OS.
 
 ## 4. Now, connect to GitHub
 
@@ -99,7 +101,8 @@ To verify that your changes have been uploaded to your GitHub repository, refres
 
 Voila! You have just shared your project online by remotely connecting VSCode to Github! Well-done!
 
-> [!NOTE] If prompted for a username, and password for '<https://github.com/>', enter them as appropriate\*
+> [!NOTE] 
+If prompted for a username, and password for '<https://github.com/>', enter them as appropriate\*
 
 # Troubleshooting
 
@@ -182,7 +185,8 @@ This ensures that **.DS_Store** files are no longer tracked and are removed from
 
 # EXTRA
 
-> [!TIP] You can remove unnecessary files, including the *yml* file, as they are intended for a website. The QMD file can be treated as an MD file or simply be removed. These changes can be reflected in your repository (see step 5).
+> [!TIP] 
+You can remove unnecessary files, including the *yml* file, as they are intended for a website. The QMD file can be treated as an MD file or simply be removed. These changes can be reflected in your repository (see step 5).
 
 Depending on your aims, you may also include files created in RStudio to the *.gitignore* file. For instance:
 
