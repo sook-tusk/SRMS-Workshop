@@ -1,7 +1,10 @@
 # Use VSCode to publish your project in GitHub
 There are several ways to connect VS Code to GitHub. This tutorial uses the **Publish to GitHub** command, introduced in VS Code version 1.73 in 2022, to automate the creation of a GitHub repository directly from VS Code. This workflow streamlines the process compared with the traditional **Git: Clone** approach, which requires an existing GitHub repository and several preliminary steps before the project can be set up locally.
 
-In VS Code, we will use Command Palette extensively as it allows us to quickly type commands and execute procedures. To trigger the command palette, press **F1** or **Ctrl+shift+p** on Windows PC or **Cmd+shift+p** on Mac. We will implement the procedures in five steps.
+We will also use **Command Palette** extensively as it allows us to quickly type commands and execute tasks in VS Code. To *trigger the command palette*, press **F1** or **Ctrl+shift+p** on Windows PC or **Cmd+shift+p** on Mac. We will implement the procedures in five steps.
+
+> [! note]
+To ensure that VS Code recognises QMD syntax and supports Visual Editor mode and other Quarto functionalities, install the extension, `Quarto`. 
 
 ## 1. Install git.
 
