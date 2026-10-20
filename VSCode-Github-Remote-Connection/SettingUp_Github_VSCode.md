@@ -1,13 +1,15 @@
 # Use VSCode to publish your project in GitHub
+
 There are several ways to connect VS Code to GitHub. This tutorial uses the **Publish to GitHub** command, introduced in VS Code version 1.73 in 2022, to automate the creation of a GitHub repository directly from VS Code. This workflow streamlines the process compared with the traditional **Git: Clone** approach, which requires an existing GitHub repository and several preliminary steps before the project can be set up locally.
 
 We will also use **Command Palette** extensively as it allows us to quickly type commands and execute tasks in VS Code. To *trigger the command palette*, press **F1** or **Ctrl+shift+p** on Windows PC or **Cmd+shift+p** on Mac. We will implement the procedures in five steps.
 
 <!-- lowercase ok, space not allowed after ! -->
-> [!tip]
-Quarto is available to load [here] <https://quarto.org/docs/get-started/>.
 
-To ensure that VS Code recognises QMD syntax and supports Visual Editor mode, and other Quarto functionalities, install the extension, `Quarto` in VS Code. 
+> [!tip] 
+Quarto is available to download here: <https://quarto.org/docs/get-started/>.
+
+Also, to ensure that VS Code recognises QMD syntax and supports Visual Editor mode, and other Quarto functionalities, install the extension, `Quarto` in VS Code.
 
 ## 1. Install git.
 
@@ -45,8 +47,7 @@ Default Project
 
 If you are interested in developing a website, you could select the *Website Project* option. When prompted to choose a directory, select an appropriate location and enter a title for the project.
 
-> [!TIP] 
-If you are unsure about the procedure, create a test project folder for now and experiment with it.
+> [!TIP] If you are unsure about the procedure, create a test project folder for now and experiment with it.
 
 ## 3b. (Mac users only) Update your .gitignore file
 
@@ -59,8 +60,7 @@ If you are Mac users, there is one more step we should take. Before we connect V
 
 An example .gitignore file is provided [here](/.gitignore).
 
-> [!TIP] 
-> Please note that *.DS_Store* is a hidden file that stores custom attributes of its containing folders related to Mac OS.
+> [!TIP] Please note that *.DS_Store* is a hidden file that stores custom attributes of its containing folders related to Mac OS.
 
 ## 4. Now, connect to GitHub
 
@@ -99,18 +99,18 @@ To verify that your changes have been uploaded to your GitHub repository, refres
 
 Voila! You have just shared your project online by remotely connecting VSCode to Github! Well-done!
 
-> [!NOTE] 
-> If prompted for a username, and password for '<https://github.com/>', enter them as appropriate\*
+> [!NOTE] If prompted for a username, and password for '<https://github.com/>', enter them as appropriate\*
 
 # Troubleshooting
 
 ## Authentification by generating SSH key
+
 Step 4 uses the GitHub Extension for authentication. If an error occurs, an alternative authentication method can be used. One such method is **SSH key authentication**, which uses cryptographic keys to establish a secure connection. SSH is particularly recommended for contributors who frequently access `private` repositories, as it provides a smooth and uninterrupted authentication process. Once the SSH key has been configured, users can connect to GitHub and push changes without having to enter their username and password each time.
 
-> [!NOTE] 
-SSH authentication uses a key pair: a private key stored locally on your machine and a public key added to your GitHub account. The command, `-C` denotes adding a comment.
+> [!NOTE] SSH authentication uses a key pair: a private key stored locally on your machine and a public key added to your GitHub account. The command, `-C` denotes adding a comment.
 
 ### Generate SSH key
+
 In the VS Code terminal, run this command:
 
 ``` json
@@ -128,7 +128,8 @@ Enter file in which to save the key (/Users/yourname/.ssh/id_ed25519):
 
 Press Enter to accept the default location. On Windows, the default location is *C:*\Users\yourname/.ssh/id_ed25519.
 
-### Paste the public SSH key to Github settings 
+### Paste the public SSH key to Github settings
+
 Now, we need to paste this (public) SSH key to the Github settings page. Go to the page <https://github.com/settings/keys> and click on **New SSH key**. Choose a name for your key (e.g. your device name, 2026-sk-mac) and paste your public SSH key. Finally click on **Add SSH key**. Apply and Click OK.
 
 To verify the settings, open the terminal in VSCode and enter:
@@ -180,8 +181,7 @@ This ensures that **.DS_Store** files are no longer tracked and are removed from
 
 # EXTRA
 
-> [!TIP] 
-You can remove unnecessary files, including the *yml* file, as they are intended for a website. The QMD file can be treated as an MD file or simply be removed. These changes can be reflected in your repository (see step 5).
+> [!TIP] You can remove unnecessary files, including the *yml* file, as they are intended for a website. The QMD file can be treated as an MD file or simply be removed. These changes can be reflected in your repository (see step 5).
 
 Depending on your aims, you may also include files created in RStudio to the *.gitignore* file. For instance:
 
@@ -203,6 +203,6 @@ Create several private repositories and experiment with Github and VSCode (You c
 
 <https://stackoverflow.com/questions/69005605/ds-store-is-showing-up-as-a-pending-change-in-my-git-repo-despite-being-untrack>
 
-<https://tms-outsource.com/blog/posts/how-to-connect-to-a-github-repository-from-vscode/> 
+<https://tms-outsource.com/blog/posts/how-to-connect-to-a-github-repository-from-vscode/>
 
 <!-- <https://tms-outsource.com/blog/posts/how-to-add-ssh-key-to-github/>  -->
